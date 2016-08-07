@@ -21,7 +21,7 @@
    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
    for (NSUInteger i=0; i<[shipmentIds count]; i++) {
       NSString *shipmentId = shipmentIds[i];
-      parameters[[NSString stringWithFormat:@"shipments[%li][id]", i]] = shipmentId;
+      parameters[[NSString stringWithFormat:@"shipments[%lu][id]", (unsigned long)i]] = shipmentId;
    }
    return [parameters copy];
 }

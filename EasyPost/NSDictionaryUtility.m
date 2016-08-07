@@ -77,7 +77,7 @@
          [_keyPathArray addObject:@""]; // Dummy will be replaced by array index
          
          for (NSUInteger i=0; i<[object count]; i++) {
-            NSString *index = [NSString stringWithFormat:@"%li", i];
+            NSString *index = [NSString stringWithFormat:@"%lu", (unsigned long)i];
             [_keyPathArray replaceObjectAtIndex:[_keyPathArray count]-1 withObject:index];
             
             id child = object[i];
