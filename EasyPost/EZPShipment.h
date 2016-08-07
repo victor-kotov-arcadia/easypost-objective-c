@@ -49,22 +49,9 @@
 @property (copy) NSString *barcode_url;
 @property (strong) NSArray<EZPCarrierAccount *> *carrier_accounts;
 
-+ (void)list:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-+ (void)retrieve:(NSString *)itemId completion:(EZPRequestCompletion)completion;
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-- (void)create:(void(^)(NSError *error))completion;
-- (void)fetchRates:(void(^)(NSError *error))completion;
-- (void)buyWithRate:(EZPRate *)rate completion:(void(^)(NSError *error))completion;
-- (void)buy:(NSString *)rateId completion:(void(^)(NSError *error))completion;
-- (void)insure:(double)amount completion:(void(^)(NSError *error))completion;
-- (void)refund:(void(^)(NSError *error))completion;
-- (void)generateLabel:(NSString *)fileFormat completion:(void(^)(NSError *error))completion;
-- (void)generateStamp:(void(^)(NSError *error))completion;
-- (void)generateBarcode:(void(^)(NSError *error))completion;
-- (void)lowestRateWithIncludeCarriers:(NSArray *)includeCarriers includeServices:(NSArray *)includeServices excludeCarriers:(NSArray *)excludeCarriers excludeServices:(NSArray *)excludeServices completion:(void(^)(EZPRate *lowestRate))completion;
-
-#pragma mark
-
+/**
+ * Get the lowest rate for the shipment. Optionally whitelist/blacklist carriers and servies from the search
+ */
 - (EZPRate *)_lowestRateFromRates:(NSArray *)theRates includeCarriers:(NSArray *)includeCarriers includeServices:(NSArray *)includeServices excludeCarriers:(NSArray *)excludeCarriers excludeServices:(NSArray *)excludeServices;
 
 @end

@@ -2,34 +2,34 @@
 // Created by Sinisa Drpa, 2015.
 
 #import <XCTest/XCTest.h>
-#import "EZPContainer.h"
+#import "EZPClient+Container.h"
 
 static CGFloat const kRequestTimeout = 10.0;
 
 @interface EZPContainerTests : XCTestCase
-
+@property (strong) EZPClient *client;
 @end
 
 @implementation EZPContainerTests
 
 - (void)setUp {
-   [super setUp];
-   // Put setup code here. This method is called before the invocation of each test method in the class.
+    [super setUp];
+    self.client = [EZPClient defaultClient];
 }
 
 - (void)tearDown {
-   // Put teardown code here. This method is called after the invocation of each test method in the class.
-   [super tearDown];
+    self.client = nil;
+    [super tearDown];
 }
 
 - (void)testCreateThenRetrieve {
    XCTestExpectation *expectation = [self expectationWithDescription:@""];
-   [EZPContainer create:[self parameters] completion:^(EZPContainer *container, NSError *error) {
+   [self.client createContainerWithParameters:[self parameters] completion:^(EZPContainer *container, NSError *error) {
       if (error) {
          XCTFail(@"Error: %@", [error localizedDescription]);
       }
       XCTAssertNotNil(container);
-      [EZPContainer retrieve:[container itemId] completion:^(EZPContainer *container, NSError *error) {
+      [self.client retrieveContainer:[container itemId] completion:^(EZPContainer *container, NSError *error) {
          if (error) {
             XCTFail(@"Error: %@", [error localizedDescription]);
          }

@@ -21,8 +21,4 @@
 @property (assign) NSNumber *weight;
 @property (strong) NSArray<EZPTrackingDetail *> *tracking_details;
 
-+ (void)list:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-+ (void)create:(NSString *)carrier trackingCode:(NSString *)trackingCode completion:(EZPRequestCompletion)completion;
-+ (void)retrieve:(NSString *)itemId completion:(EZPRequestCompletion)completion;
-
 @end

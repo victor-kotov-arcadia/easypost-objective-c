@@ -30,10 +30,4 @@
 @property (strong) NSArray<EZPContainer *> *containers;
 @property (strong) NSArray<EZPItem *> *items;
 
-+ (void)retrieve:(NSString *)itemId completion:(EZPRequestCompletion)completion;
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-- (void)create:(void(^)(NSError *error))completion;
-- (void)buyWithRate:(EZPRate *)rate completion:(void(^)(NSError *error))completion;
-- (void)buy:(NSString *)carrier service:(NSString *)service completion:(void(^)(NSError *error))completion;
-
 @end

@@ -14,10 +14,4 @@
 @property (strong) NSDictionary *credentials;
 @property (strong) NSDictionary *test_credentials;
 
-+ (void)list:(EZPRequestCompletion)completion;
-+ (void)retrieve:(NSString *)carrierAccountId completion:(EZPRequestCompletion)completion;
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-+ (void)delete:(NSString *)carrierAccountId completion:(void(^)(NSError *error))completion;
-+ (void)update:(NSString *)itemId parameters:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-
 @end

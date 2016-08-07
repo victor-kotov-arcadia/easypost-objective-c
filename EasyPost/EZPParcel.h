@@ -15,7 +15,4 @@
 @property (assign) double weight;
 @property (copy) NSString *predefined_package;
 
-+ (void)retrieve:(NSString *)parcelId completion:(EZPRequestCompletion)completion;
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-
 @end

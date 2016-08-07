@@ -2,29 +2,29 @@
 // Created by Sinisa Drpa, 2015.
 
 #import <XCTest/XCTest.h>
-#import "EZPTracker.h"
+#import "EZPClient+Tracker.h"
 
 static CGFloat const kRequestTimeout = 10.0;
 
 @interface EZPTrackerTests : XCTestCase
-
+@property (strong) EZPClient *client;
 @end
 
 @implementation EZPTrackerTests
 
 - (void)setUp {
-   [super setUp];
-   // Put setup code here. This method is called before the invocation of each test method in the class.
+    [super setUp];
+    self.client = [EZPClient defaultClient];
 }
 
 - (void)tearDown {
-   // Put teardown code here. This method is called after the invocation of each test method in the class.
-   [super tearDown];
+    self.client = nil;
+    [super tearDown];
 }
 
 - (void)testList {
    XCTestExpectation *expectation = [self expectationWithDescription:@""];
-   [EZPTracker list:nil completion:^(NSArray *trackers, NSError *error) {
+   [self.client listTrackers:nil completion:^(NSArray *trackers, NSError *error) {
       if (error) {
          XCTFail(@"Error: %@", [error localizedDescription]);
       }
@@ -42,7 +42,7 @@ static CGFloat const kRequestTimeout = 10.0;
 
 - (void)testCreate {
    XCTestExpectation *expectation = [self expectationWithDescription:@""];
-   [EZPTracker create:@"USPS" trackingCode:@"EZ1000000001" completion:^(EZPTracker *tracker, NSError *error) {
+   [self.client createTrackerForCarrier:@"USPS" trackingCode:@"EZ1000000001" completion:^(EZPTracker *tracker, NSError *error) {
       if (error) {
          XCTFail(@"Error: %@", [error localizedDescription]);
       }
@@ -61,12 +61,12 @@ static CGFloat const kRequestTimeout = 10.0;
 
 - (void)testCreateThenRetrieve {
    XCTestExpectation *expectation = [self expectationWithDescription:@""];
-   [EZPTracker create:@"USPS" trackingCode:@"EZ1000000001" completion:^(EZPTracker *tracker, NSError *error) {
+   [self.client createTrackerForCarrier:@"USPS" trackingCode:@"EZ1000000001" completion:^(EZPTracker *tracker, NSError *error) {
       if (error) {
          XCTFail(@"Error: %@", [error localizedDescription]);
       }
       XCTAssertNotNil(tracker);
-      [EZPTracker retrieve:[tracker itemId] completion:^(EZPTracker *tracker, NSError *error) {
+      [self.client retrieveTracker:[tracker itemId] completion:^(EZPTracker *tracker, NSError *error) {
          if (error) {
             XCTFail(@"Error: %@", [error localizedDescription]);
          }

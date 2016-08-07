@@ -9,33 +9,6 @@
 
 @implementation EZPCustomsInfo
 
-/**
- * Retrieve a CustomsInfo from its id
- */
-+ (void)retrieve:(NSString *)itemId completion:(EZPRequestCompletion)completion {
-   NSParameterAssert(itemId);
-   [[EZPRequest sessionManager] GET:[NSString stringWithFormat:@"customs_infos/%@", itemId]
-                         parameters:nil
-                            success:^(NSURLSessionDataTask *task, id responseObject) {
-                               [EZPCustomsInfo success:responseObject completion:completion];
-                            } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                               completion(nil, error);
-                            }];
-}
-
-/**
- * Create a CustomsInfo
- */
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion {
-   [[EZPRequest sessionManager] POST:@"customs_infos"
-                          parameters:parameters
-                             success:^(NSURLSessionDataTask *task, id responseObject) {
-                                [EZPCustomsInfo success:responseObject completion:completion];
-                             } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                                completion(nil, error);
-                             }];
-}
-
 + (InCodeMappingProvider *)mappingProvider {
    InCodeMappingProvider *mappingProvider = [[InCodeMappingProvider alloc] init];
    NSDictionary *propertyMap = [EZPObject propertyMap];

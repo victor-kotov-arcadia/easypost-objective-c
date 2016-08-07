@@ -24,13 +24,13 @@
    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
    NSString *path = [bundle pathForResource:@"shipment_dictionary" ofType:@"data"];
    NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:path];
-   //NSLog(@"dictionary: %@", dictionary);
    
    NSDictionaryUtility *utility = [NSDictionaryUtility new];
    NSDictionary *result = [utility flattenedDictionaryWithDictionary:dictionary prefix:@"shipment"];
-   NSLog(@"result: %@", result);
-   
-   XCTAssertNotNil(result);
+
+   NSDictionary *expected = [NSDictionary dictionaryWithContentsOfURL:
+                             [bundle URLForResource:@"shipment_dictionary_flattened" withExtension:@"data"]];
+   XCTAssertEqualObjects(result, expected);
 }
 
 @end

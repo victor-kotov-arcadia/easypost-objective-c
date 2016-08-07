@@ -10,6 +10,4 @@
 @property (copy) NSString *logo;
 @property (strong) NSDictionary *fields;
 
-+ (void)list:(EZPRequestCompletion)completion;
-
 @end

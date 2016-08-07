@@ -21,7 +21,4 @@
 @property (strong) NSArray<EZPCustomsItem *> *customs_items;
 @property (copy) NSString *mode;
 
-+ (void)retrieve:(NSString *)itemId completion:(EZPRequestCompletion)completion;
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-
 @end
