@@ -1,34 +1,53 @@
 # EasyPost Objective-C Client Library
 
-EasyPost is a simple shipping API. You can sign up for an account at https://easypost.com
+EasyPost is a simple shipping API. You can sign up for an account at [https://easypost.com](https://easypost.com)
 
 ## Installation
 
-Update EZPConfiguration.m:
+Update these two values in `EZPConfiguration.m` file:
 
 ```objectivec
 NSString * const kTestSecretAPIKey = @"YOUR_TEST_API_KEY";
 NSString * const kLiveSecretAPIKey = @"YOUR_LIVE_API_KEY";
 ```
 
-to match your configuration.
+to match your configuration; now you may use the default `EZPClient` instance:
+
+```objectivec
+self.client = [EZPClient defaultClient];
+```
+
+Otherwise you can create a client object directly with your secret API key:
+
+```objectivec
+self.client = [[EZPClient alloc] initWithSecretKey:@"XXXXX"];
+```
+
+> You may have multiple clients (with different secret keys) for making API request simultaneously from different EasyPost accounts.
 
 ## Usage
 
-Lib. includes asynchronous and synchronous access to the API. eg. to create EZPAddress:
+This library includes methods for asynchronous and synchronous access to EasyPost API. Below is an example of creating an address object and verifying it:
 
-Asynchronous:
-```objectivec
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-```
+* Asynchronous:
 
-Synchronous:
-```objectivec
-+ (EZPAddress *)create:(NSDictionary *)parameters;
-```
+    ```objectivec
+NSDictionary *addressParameters = @{ ... };
+[self.client createAndVerifyAddressWithParameters:addressParameters completion:^(EZPAddress *address, NSError *error) {
+        NSLog(@"Verified address: %@", address);
+}];
+    ```
 
-Synchronous is probably anti-pattern, but it's easier to use (to avoid long nesting of asynchronous callbacks). 
-Asynchronous and synchronous version can be combined.
+* Synchronous:
+    ```objectivec
+NSDictionary *addressParameters = @{ ... };
+EZPAddress *address = [self.client createAndVerifyAddressWithParameters:parameters];
+NSLog(@"Verified address: %@", address);
+    ```
+
+
+> Synchronous network operations is probably anti-pattern, but it's easier to use (to avoid long nesting of asynchronous callbacks). 
+> Asynchronous and synchronous version can be combined.
 
 The project includes two sample applications:
 
@@ -37,9 +56,9 @@ The project includes two sample applications:
 
 ## Credits
 
-https://github.com/mproberts/objc-promise
-https://github.com/aryaxt/OCMapper
+* [https://github.com/mproberts/objc-promise](https://github.com/mproberts/objc-promise)
+* [https://github.com/aryaxt/OCMapper](https://github.com/aryaxt/OCMapper)
 
-## API Documentation
+## EasyPost API Documentation
 
-Up-to-date documentation at: https://www.geteasypost.com/docs
+Up-to-date official documentation is available [here](https://www.geteasypost.com/docs).
