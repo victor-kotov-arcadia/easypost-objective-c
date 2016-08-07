@@ -32,15 +32,15 @@ This library includes methods for asynchronous and synchronous access to EasyPos
 * Asynchronous:
 
     ```objectivec
-NSDictionary *addressParameters = @{ ... };
-[self.client createAndVerifyAddressWithParameters:addressParameters completion:^(EZPAddress *address, NSError *error) {
+NSDictionary *parameters = @{ ... };
+[self.client createAndVerifyAddressWithParameters:parameters completion:^(EZPAddress *address, NSError *error) {
         NSLog(@"Verified address: %@", address);
 }];
     ```
 
 * Synchronous:
     ```objectivec
-NSDictionary *addressParameters = @{ ... };
+NSDictionary *parameters = @{ ... };
 EZPAddress *address = [self.client createAndVerifyAddressWithParameters:parameters];
 NSLog(@"Verified address: %@", address);
     ```
