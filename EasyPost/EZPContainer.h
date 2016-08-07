@@ -16,7 +16,4 @@
 @property (assign) double height;
 @property (assign) double max_weight;
 
-+ (void)retrieve:(NSString *)itemId completion:(EZPRequestCompletion)completion;
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-
 @end

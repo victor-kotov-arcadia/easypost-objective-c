@@ -24,7 +24,4 @@
 @property (copy) NSString *shipment_id;
 @property (copy) NSString *carrier_account_id;
 
-+ (void)retrieve:(NSString *)rateId completion:(EZPRequestCompletion)completion;
-//+ (void)retrieve:(EZPRequestCompletion)completion;
-
 @end

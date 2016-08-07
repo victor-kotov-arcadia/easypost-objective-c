@@ -19,9 +19,4 @@
 @property (assign) NSUInteger recharge_threshold;
 @property (strong) NSArray <EZPUser *> *children;
 
-+ (void)retrieve:(NSString *)itemId completion:(EZPRequestCompletion)completion;
-+ (void)retrieveUsers:(EZPRequestCompletion)completion;
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-- (void)update:(NSDictionary *)parameters completion:(void(^)(NSError *error))completion;
-
 @end

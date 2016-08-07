@@ -3,27 +3,27 @@
 
 #import <XCTest/XCTest.h>
 
-#import "EZPCustomsItem+Synchronous.h"
+#import "EZPClient+CustomsItem.h"
 
 @interface EZPCustomsItemSynchronousTests : XCTestCase
-
+@property (strong) EZPClient *client;
 @end
 
 @implementation EZPCustomsItemSynchronousTests
 
 - (void)setUp {
-   [super setUp];
-   // Put setup code here. This method is called before the invocation of each test method in the class.
+    [super setUp];
+    self.client = [EZPClient defaultClient];
 }
 
 - (void)tearDown {
-   // Put teardown code here. This method is called after the invocation of each test method in the class.
-   [super tearDown];
+    self.client = nil;
+    [super tearDown];
 }
 
 - (void)testCreateAndRetrieve {
-   EZPCustomsItem *item = [EZPCustomsItem create:[self parameters]];
-   EZPCustomsItem *retrieved = [EZPCustomsItem retrieve:item.itemId];
+   EZPCustomsItem *item = [self.client createCustomsItemWithParameters:[self parameters]];
+   EZPCustomsItem *retrieved = [self.client retrieveCustomsItem:item.itemId];
    XCTAssertTrue([[retrieved itemId] isEqualToString:[item itemId]]);
    XCTAssertEqual(10.0, retrieved.value);
 }

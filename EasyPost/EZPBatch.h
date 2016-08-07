@@ -22,15 +22,6 @@
 @property (copy) NSString *error;
 @property (copy) NSString *message;
 
-+ (void)retrieve:(NSString *)itemId completion:(EZPRequestCompletion)completion;
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-- (void)addShipmentsWithShipments:(NSArray *)shipments completion:(void(^)(NSError *error))completion;
-- (void)addShipments:(NSArray *)shipmentIds completion:(void(^)(NSError *error))completion;
-- (void)removeShipmentsWithShipments:(NSArray *)shipments completion:(void(^)(NSError *error))completion;
-- (void)removeShipments:(NSArray *)shipmentIds completion:(void(^)(NSError *error))completion;
-
-#pragma mark
-
 - (NSArray *)shipmentIdsWithShipments:(NSArray *)shipments;
 - (NSDictionary *)parametersWithShipmentIds:(NSArray *)shipmentIds;
 

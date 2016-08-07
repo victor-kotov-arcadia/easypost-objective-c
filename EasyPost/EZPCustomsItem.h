@@ -16,7 +16,4 @@
 @property (assign) double weight;
 @property (copy) NSString *mode;
 
-+ (void)retrieve:(NSString *)itemId completion:(EZPRequestCompletion)completion;
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-
 @end

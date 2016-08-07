@@ -18,6 +18,4 @@
 @property (copy) NSString *status;
 @property (copy) NSString *message;
 
-+ (void)list:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-
 @end

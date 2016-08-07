@@ -2,29 +2,29 @@
 // Created by Sinisa Drpa, 2015.
 
 #import <XCTest/XCTest.h>
-#import "EZPCustomsItem.h"
+#import "EZPClient+CustomsItem.h"
 
 static CGFloat const kRequestTimeout = 10.0;
 
 @interface EZPCustomsItemTests : XCTestCase
-
+@property (strong) EZPClient *client;
 @end
 
 @implementation EZPCustomsItemTests
 
 - (void)setUp {
-   [super setUp];
-   // Put setup code here. This method is called before the invocation of each test method in the class.
+    [super setUp];
+    self.client = [EZPClient defaultClient];
 }
 
 - (void)tearDown {
-   // Put teardown code here. This method is called after the invocation of each test method in the class.
-   [super tearDown];
+    self.client = nil;
+    [super tearDown];
 }
 
 - (void)testCreate {
    XCTestExpectation *expectation = [self expectationWithDescription:@""];
-   [EZPCustomsItem create:[self parameters] completion:^(EZPCustomsItem *item, NSError *error) {
+   [self.client createCustomsItemWithParameters:[self parameters] completion:^(EZPCustomsItem *item, NSError *error) {
       if (error) {
          XCTFail(@"Error: %@", [error localizedDescription]);
       }
@@ -43,12 +43,12 @@ static CGFloat const kRequestTimeout = 10.0;
 
 - (void)testCreateThenRetrieve {
    XCTestExpectation *expectation = [self expectationWithDescription:@""];
-   [EZPCustomsItem create:[self parameters] completion:^(EZPCustomsItem *item, NSError *error) {
+   [self.client createCustomsItemWithParameters:[self parameters] completion:^(EZPCustomsItem *item, NSError *error) {
       if (error) {
          XCTFail(@"Error: %@", [error localizedDescription]);
       }
       NSString *createdId = [item itemId];
-      [EZPCustomsItem retrieve:createdId completion:^(EZPCustomsItem *item, NSError *error) {
+      [self.client retrieveCustomsItem:createdId completion:^(EZPCustomsItem *item, NSError *error) {
          if (error) {
             XCTFail(@"Error: %@", [error localizedDescription]);
          }

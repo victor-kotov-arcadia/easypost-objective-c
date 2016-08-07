@@ -2,30 +2,30 @@
 // Created by Sinisa Drpa, 2015.
 
 #import <XCTest/XCTest.h>
-#import "EZPScanForm.h"
+#import "EZPClient+ScanForm.h"
 #import "EZPScanFormList.h"
 
-static CGFloat const kRequestTimeout = 10.0;
+static CGFloat const kRequestTimeout = 15.0;
 
 @interface EZPScanFormTests : XCTestCase
-
+@property (strong) EZPClient *client;
 @end
 
 @implementation EZPScanFormTests
 
 - (void)setUp {
-   [super setUp];
-   // Put setup code here. This method is called before the invocation of each test method in the class.
+    [super setUp];
+    self.client = [EZPClient defaultClient];
 }
 
 - (void)tearDown {
-   // Put teardown code here. This method is called after the invocation of each test method in the class.
-   [super tearDown];
+    self.client = nil;
+    [super tearDown];
 }
 
 - (void)testList {
    XCTestExpectation *expectation = [self expectationWithDescription:@""];
-   [EZPScanForm list:nil completion:^(EZPScanFormList *scanFormList, NSError *error) {
+   [self.client listScanFormsWithParameters:nil completion:^(EZPScanFormList *scanFormList, NSError *error) {
       if (error) {
          XCTFail(@"Error: %@", [error localizedDescription]);
       }

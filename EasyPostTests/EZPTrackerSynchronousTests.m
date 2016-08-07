@@ -2,42 +2,40 @@
 // Created by Sinisa Drpa, 2015.
 
 #import <XCTest/XCTest.h>
-
-#import "EZPTracker+Synchronous.h"
-#import "EZPTrackerList+Synchronous.h"
+#import "EZPClient+Tracker.h"
 
 @interface EZPTrackerSynchronousTests : XCTestCase
-
+@property (strong) EZPClient *client;
 @end
 
 @implementation EZPTrackerSynchronousTests
 
 - (void)setUp {
-   [super setUp];
-   // Put setup code here. This method is called before the invocation of each test method in the class.
+    [super setUp];
+    self.client = [EZPClient defaultClient];
 }
 
 - (void)tearDown {
-   // Put teardown code here. This method is called after the invocation of each test method in the class.
-   [super tearDown];
+    self.client = nil;
+    [super tearDown];
 }
 
 - (void)testCreateAndRetrieve {
-   EZPTracker *tracker = [EZPTracker create:@"USPS" trackingCode:@"EZ1000000001"];
-   XCTAssertTrue([[tracker tracking_code] isEqualToString:@"EZ1000000001"]);
-   XCTAssertNotNil(tracker.est_delivery_date);
-   XCTAssertNotNil(tracker.carrier);
-   
-   EZPTracker *retrieved = [EZPTracker retrieve:tracker.itemId];
-   XCTAssertTrue([retrieved.itemId isEqualToString:tracker.itemId]);
+    EZPTracker *tracker = [self.client createTrackerForCarrierSynchronously:@"USPS" trackingCode:@"EZ1000000001"];
+    XCTAssertTrue([[tracker tracking_code] isEqualToString:@"EZ1000000001"]);
+    XCTAssertNotNil(tracker.est_delivery_date);
+    XCTAssertNotNil(tracker.carrier);
+
+    EZPTracker *retrieved = [self.client retrieveTracker:tracker.itemId];
+    XCTAssertTrue([retrieved.itemId isEqualToString:tracker.itemId]);
 }
 
 - (void)testList {
-   EZPTrackerList *trackerList = [EZPTracker list:nil];
-   XCTAssertNotEqual(0, trackerList.trackers.count);
-   
-   EZPTrackerList *nextTrackerList = [trackerList next];
-   XCTAssertNotEqual(trackerList.trackers[0].itemId, nextTrackerList.trackers[0].itemId);
+    EZPTrackerList *trackerList = [self.client listOfTrackersWithParameters:nil];
+    XCTAssertNotEqual(0, trackerList.trackers.count);
+
+    EZPTrackerList *nextTrackerList = [self.client nextTrackerListFor:trackerList];
+    XCTAssertNotEqual(trackerList.trackers[0].itemId, nextTrackerList.trackers[0].itemId);
 }
 
 @end

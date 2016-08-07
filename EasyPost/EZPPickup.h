@@ -28,10 +28,4 @@
 @property (strong) NSArray<EZPCarrierAccount *> *carrier_accounts;
 @property (strong) NSArray<EZPRate *> *pickup_rates;
 
-+ (void)retrieve:(NSString *)itemId completion:(EZPRequestCompletion)completion;
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-- (void)create:(void(^)(NSError *error))completion;
-- (void)buyWithCarrier:(NSString *)carrier service:(NSString *)service completion:(void(^)(NSError *error))completion;
-- (void)cancel:(void(^)(NSError *error))completion;
-
 @end

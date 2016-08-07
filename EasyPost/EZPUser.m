@@ -3,74 +3,35 @@
 
 #import "EZPUser.h"
 #import "EZPRequest.h"
-
 #import "AFNetworking.h"
+
+@interface EZPObject ()
+- (void)setKeyValuesWithDictionary:(NSDictionary *)dictionary;
+@end
 
 @implementation EZPUser
 
-/**
- * Retrieve a User from its id. If no id is specified, it returns the user for the api_key specified
- * REQUIRES kLiveSecretAPIKey
- */
-+ (void)retrieve:(NSString *)itemId completion:(EZPRequestCompletion)completion {
-   NSParameterAssert(itemId);
-   [[EZPRequest liveSessionManager] GET:[NSString stringWithFormat:@"users/%@", itemId]
-                             parameters:nil
-                                success:^(NSURLSessionDataTask *task, id responseObject) {
-                                   EZPUser *object = [[EZPUser alloc] initWithDictionary:responseObject];
-                                   completion(object, nil);
-                                } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                                   completion(nil, error);
-                                }];
+// NOTE(rodionovd): Some of our properties are NSUIntegers which can not be mapped directly from
+// NSStrings (came from JSON). We manually convert these strings into NSNumbers before mapping further
+- (void)setKeyValuesWithDictionary:(NSDictionary *)dictionary
+{
+    NSMutableDictionary *fixedDictionary = [dictionary mutableCopy];
+    for (NSString *affectedKey in @[@"price_per_shipment", @"recharge_amount",
+                                    @"recharge_threshold", @"secondary_recharge_amount"]) {
+        fixedDictionary[affectedKey] = @([dictionary[affectedKey] integerValue]);
+    }
+    return [super setKeyValuesWithDictionary: fixedDictionary];
 }
 
-/**
- * Retrieve the users for the api_key specified
- * REQUIRES kLiveSecretAPIKey
- */
-+ (void)retrieveUsers:(EZPRequestCompletion)completion {
-   [[EZPRequest liveSessionManager] GET:@"users"
-                             parameters:nil
-                                success:^(NSURLSessionDataTask *task, id responseObject) {
-                                   EZPUser *object = [[EZPUser alloc] initWithDictionary:responseObject];
-                                   completion(object, nil);
-                                } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                                   completion(nil, error);
-                                }];
-}
-
-/**
- * Create a child user for the account associated with the api_key specified
- * REQUIRES kLiveSecretAPIKey
- */
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion {
-   [[EZPRequest sessionManager] POST:@"users"
-                          parameters:parameters
-                             success:^(NSURLSessionDataTask *task, id responseObject) {
-                                EZPUser *object = [[EZPUser alloc] initWithDictionary:responseObject];
-                                completion(object, nil);
-                             } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                                completion(nil, error);
-                             }];
-}
-
-/**
- * Update the User associated with the api_key specified
- * REQUIRES kLiveSecretAPIKey
- */
-- (void)update:(NSDictionary *)parameters completion:(void(^)(NSError *error))completion {
-   NSParameterAssert(self.itemId);
-   NSParameterAssert(parameters);
-   __weak EZPUser *weakSelf = self;
-   [[EZPRequest liveSessionManager] PUT:[NSString stringWithFormat:@"users/%@", self.itemId]
-                             parameters:@{@"user": parameters}
-                                success:^(NSURLSessionDataTask *task, id responseObject) {
-                                   EZPUser *object = [[EZPUser alloc] initWithDictionary:responseObject];
-                                   [weakSelf mergeWithObject:object];
-                                   completion(nil);
-                                } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                                   completion(error);
-                                }];
+- (void)setValue:(id)value forKey:(NSString *)key
+{
+    NSArray *affectedKeys = @[@"price_per_shipment", @"recharge_amount",
+                              @"recharge_threshold", @"secondary_recharge_amount"];
+    if ([affectedKeys containsObject:key]) {
+        [super setValue:@([value integerValue]) forKey:key];
+    } else {
+        [super setValue:value forKey:key];
+    }
 }
 
 @end

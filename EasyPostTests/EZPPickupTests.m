@@ -2,46 +2,46 @@
 // Created by Sinisa Drpa, 2015.
 
 #import <XCTest/XCTest.h>
-#import "EZPPickup.h"
+#import "EZPClient+Pickup.h"
 #import "EZPAddress.h"
 #import "EZPParcel.h"
-#import "EZPShipment.h"
+#import "EZPClient+Shipment.h"
 
-static CGFloat const kRequestTimeout = 10.0;
+static CGFloat const kRequestTimeout = 25.0;
 
 @interface EZPPickupTests : XCTestCase
-
+@property (strong) EZPClient *client;
 @end
 
 @implementation EZPPickupTests
 
 - (void)setUp {
-   [super setUp];
-   // Put setup code here. This method is called before the invocation of each test method in the class.
+    [super setUp];
+    self.client = [EZPClient defaultClient];
 }
 
 - (void)tearDown {
-   // Put teardown code here. This method is called after the invocation of each test method in the class.
-   [super tearDown];
+    self.client = nil;
+    [super tearDown];
 }
 
 - (void)xtestCreateThenRetrieve {
    XCTestExpectation *expectation = [self expectationWithDescription:@""];
    EZPShipment *shipment = [self shipment];
-   [shipment create:^(NSError *error) {
+   [self.client createShipment:shipment completion:^(NSError *error) {
       if (error) {
          XCTFail(@"Error: %@", [error localizedDescription]);
       }
       EZPPickup *pickup = [self pickup];
       pickup.shipment = shipment;
       
-      [pickup create:^(NSError *error) {
+      [self.client createPickup:pickup completion:^(NSError *error) {
          if (error) {
             XCTFail(@"Error: %@", [error localizedDescription]);
          }
          XCTAssertNotNil([pickup itemId]);
          XCTAssertTrue([pickup.address.street1 isEqualToString:@"164 Townsend Street"]);
-         [EZPPickup retrieve:[pickup itemId] completion:^(EZPPickup *retrieved, NSError *error) {
+         [self.client retrievePickup:[pickup itemId] completion:^(EZPPickup *retrieved, NSError *error) {
             if (error) {
                XCTFail(@"Error: %@", [error localizedDescription]);
             }
@@ -67,11 +67,11 @@ static CGFloat const kRequestTimeout = 10.0;
 - (void)xtestBuyAndCancel {
    XCTestExpectation *expectation = [self expectationWithDescription:@""];
    NSDictionary *parameters = [[self pickup] toDictionaryWithPrefix:@"pickup"];
-   [EZPPickup create:parameters completion:^(EZPPickup *pickup, NSError *error) {
-      [pickup buyWithCarrier:@"FEDEX" service:@"Same Day" completion:^(NSError *error) {
+   [self.client createPickupWithParameters:parameters completion:^(EZPPickup *pickup, NSError *error) {
+       [self.client buyPickup:pickup withCarrier:@"FEDEX" service:@"Same Day" completion:^(NSError *error) {
          XCTAssertNotNil(pickup.confirmation);
          
-         [pickup cancel:^(NSError *error) {
+         [self.client cancelPickup:pickup completion:^(NSError *error) {
             XCTAssertTrue([pickup.status isEqualToString:@"canceled"]);
             [expectation fulfill];
          }];

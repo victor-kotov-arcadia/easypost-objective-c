@@ -21,7 +21,4 @@
 @property (assign) double height;
 @property (assign) double weight;
 
-+ (void)retrieve:(NSString *)itemId completion:(EZPRequestCompletion)completion;
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-
 @end

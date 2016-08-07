@@ -23,10 +23,4 @@
 @property (copy) NSString *error;
 @property (copy) NSString *message;
 
-+ (void)retrieve:(NSString *)addressId completion:(EZPRequestCompletion)completion;
-+ (void)create:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-- (void)create:(EZPRequestCompletion)completion;
-+ (void)createAndVerify:(NSDictionary *)parameters completion:(EZPRequestCompletion)completion;
-- (void)verify:(NSString *)carrier completion:(EZPRequestCompletion)completion;
-
 @end

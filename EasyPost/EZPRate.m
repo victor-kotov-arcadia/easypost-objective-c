@@ -8,35 +8,6 @@
 
 @implementation EZPRate
 
-/**
- * Retrieve rates
- */
-//+ (void)retrieve:(EZPRequestCompletion)completion {
-//   [[EZPRequest sessionManager] GET:@"rates"
-//                         parameters:nil
-//                            success:^(NSURLSessionDataTask *task, id responseObject) {
-//                               [EZPRate success:responseObject completion:completion];
-//                            } failure:^(NSURLSessionDataTask *task, NSError *error) {
-//                               completion(nil, error);
-//                            }];
-//}
-
-/**
- * Retrieve a Rate from its id
- */
-+ (void)retrieve:(NSString *)itemId completion:(EZPRequestCompletion)completion {
-   NSParameterAssert(itemId);
-   [[EZPRequest sessionManager] GET:[NSString stringWithFormat:@"rates/%@", itemId]
-                         parameters:nil
-                            success:^(NSURLSessionDataTask *task, id responseObject) {
-                               [EZPRate success:responseObject completion:completion];
-                            } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                               completion(nil, error);
-                            }];
-}
-
-#pragma mark
-
 - (BOOL)isEqualToRate:(EZPRate *)rate {
    if (!rate) {
       return NO;

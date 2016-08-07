@@ -7,54 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B683C3196971BCF932AD3F2 /* libPods-EasyPostTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4661C5CAFD5BBC71CB87199 /* libPods-EasyPostTests.a */; };
-		B0433C1885B5A8A9F9EF7A2E /* libPods-EasyPost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6530CAB38BF21C09AF8F7147 /* libPods-EasyPost.a */; };
-		B120406B1BF71A660091B397 /* Deferred.h in Headers */ = {isa = PBXBuildFile; fileRef = B12040671BF71A660091B397 /* Deferred.h */; };
-		B120406D1BF71A660091B397 /* Promise.h in Headers */ = {isa = PBXBuildFile; fileRef = B12040691BF71A660091B397 /* Promise.h */; };
+		0A291E451D54538E0003F2A3 /* NSDictionaryUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B147D08E1BF5D8ED00AE43E9 /* NSDictionaryUtilityTests.m */; };
+		0A291E471D5454330003F2A3 /* shipment_dictionary_flattened.data in Resources */ = {isa = PBXBuildFile; fileRef = 0A291E461D5454330003F2A3 /* shipment_dictionary_flattened.data */; };
+		0A291E4A1D5454DC0003F2A3 /* EZPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E481D5454DC0003F2A3 /* EZPClient.h */; };
+		0A291E4B1D5454DC0003F2A3 /* EZPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E491D5454DC0003F2A3 /* EZPClient.m */; };
+		0A291E4E1D5458550003F2A3 /* EZPClient+Address.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E4C1D5458550003F2A3 /* EZPClient+Address.h */; };
+		0A291E4F1D5458550003F2A3 /* EZPClient+Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E4D1D5458550003F2A3 /* EZPClient+Address.m */; };
+		0A291E521D545B570003F2A3 /* EZPClient+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E501D54589B0003F2A3 /* EZPClient+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0A291E551D545E570003F2A3 /* EZPClient+Batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E531D545E570003F2A3 /* EZPClient+Batch.h */; };
+		0A291E561D545E570003F2A3 /* EZPClient+Batch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E541D545E570003F2A3 /* EZPClient+Batch.m */; };
+		0A291E591D5469010003F2A3 /* EZPClient+CarrierAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E571D5469010003F2A3 /* EZPClient+CarrierAccount.h */; };
+		0A291E5A1D5469010003F2A3 /* EZPClient+CarrierAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E581D5469010003F2A3 /* EZPClient+CarrierAccount.m */; };
+		0A291E5D1D546A3B0003F2A3 /* EZPClient+CarrierType.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E5B1D546A3B0003F2A3 /* EZPClient+CarrierType.h */; };
+		0A291E5E1D546A3B0003F2A3 /* EZPClient+CarrierType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E5C1D546A3B0003F2A3 /* EZPClient+CarrierType.m */; };
+		0A291E611D546B660003F2A3 /* EZPClient+Container.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E5F1D546B660003F2A3 /* EZPClient+Container.h */; };
+		0A291E621D546B660003F2A3 /* EZPClient+Container.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E601D546B660003F2A3 /* EZPClient+Container.m */; };
+		0A291E651D546C550003F2A3 /* EZPClient+CustomsInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E631D546C550003F2A3 /* EZPClient+CustomsInfo.h */; };
+		0A291E661D546C550003F2A3 /* EZPClient+CustomsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E641D546C550003F2A3 /* EZPClient+CustomsInfo.m */; };
+		0A291E691D546D840003F2A3 /* EZPClient+CustomsItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E671D546D840003F2A3 /* EZPClient+CustomsItem.h */; };
+		0A291E6A1D546D840003F2A3 /* EZPClient+CustomsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E681D546D840003F2A3 /* EZPClient+CustomsItem.m */; };
+		0A291E6D1D546E530003F2A3 /* EZPClient+Item.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E6B1D546E530003F2A3 /* EZPClient+Item.h */; };
+		0A291E6E1D546E530003F2A3 /* EZPClient+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E6C1D546E530003F2A3 /* EZPClient+Item.m */; };
+		0A291E721D546EFD0003F2A3 /* EZPClient+Order.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E701D546EFD0003F2A3 /* EZPClient+Order.h */; };
+		0A291E731D546EFD0003F2A3 /* EZPClient+Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E711D546EFD0003F2A3 /* EZPClient+Order.m */; };
+		0A291E761D54716B0003F2A3 /* EZPClient+Parcel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E741D54716B0003F2A3 /* EZPClient+Parcel.h */; };
+		0A291E771D54716B0003F2A3 /* EZPClient+Parcel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E751D54716B0003F2A3 /* EZPClient+Parcel.m */; };
+		0A291E7A1D5472540003F2A3 /* EZPClient+Pickup.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E781D5472540003F2A3 /* EZPClient+Pickup.h */; };
+		0A291E7B1D5472540003F2A3 /* EZPClient+Pickup.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E791D5472540003F2A3 /* EZPClient+Pickup.m */; };
+		0A291E7E1D5474AF0003F2A3 /* EZPClient+Rate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E7C1D5474AF0003F2A3 /* EZPClient+Rate.h */; };
+		0A291E7F1D5474AF0003F2A3 /* EZPClient+Rate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E7D1D5474AF0003F2A3 /* EZPClient+Rate.m */; };
+		0A291E821D54754A0003F2A3 /* EZPClient+ScanForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E801D54754A0003F2A3 /* EZPClient+ScanForm.h */; };
+		0A291E831D54754A0003F2A3 /* EZPClient+ScanForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E811D54754A0003F2A3 /* EZPClient+ScanForm.m */; };
+		0A291E861D5490C10003F2A3 /* EZPClient+Shipment.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E841D5490C10003F2A3 /* EZPClient+Shipment.h */; };
+		0A291E871D5490C10003F2A3 /* EZPClient+Shipment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E851D5490C10003F2A3 /* EZPClient+Shipment.m */; };
+		0A291E8A1D54A8040003F2A3 /* EZPClient+Tracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E881D54A8040003F2A3 /* EZPClient+Tracker.h */; };
+		0A291E8B1D54A8040003F2A3 /* EZPClient+Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E891D54A8040003F2A3 /* EZPClient+Tracker.m */; };
+		0A291E8E1D54A91B0003F2A3 /* EZPClient+User.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E8C1D54A91B0003F2A3 /* EZPClient+User.h */; };
+		0A291E8F1D54A91B0003F2A3 /* EZPClient+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E8D1D54A91B0003F2A3 /* EZPClient+User.m */; };
+		0A291E921D55CA7C0003F2A3 /* EZPClient+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E901D55CA7C0003F2A3 /* EZPClient+Synchronous.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0A291E931D55CA7C0003F2A3 /* EZPClient+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E911D55CA7C0003F2A3 /* EZPClient+Synchronous.m */; };
+		0A291E971D561F890003F2A3 /* EZPClient+ScanFormList.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E951D561F890003F2A3 /* EZPClient+ScanFormList.h */; };
+		0A291E981D561F890003F2A3 /* EZPClient+ScanFormList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E961D561F890003F2A3 /* EZPClient+ScanFormList.m */; };
+		0A291E9B1D5706A10003F2A3 /* EZPClient+ShipmentList.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E991D5706A10003F2A3 /* EZPClient+ShipmentList.h */; };
+		0A291E9C1D5706A10003F2A3 /* EZPClient+ShipmentList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E9A1D5706A10003F2A3 /* EZPClient+ShipmentList.m */; };
+		0A291E9F1D5713340003F2A3 /* EZPClient+TrackerList.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291E9D1D5713340003F2A3 /* EZPClient+TrackerList.h */; };
+		0A291EA01D5713340003F2A3 /* EZPClient+TrackerList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291E9E1D5713340003F2A3 /* EZPClient+TrackerList.m */; };
+		0A291EA31D5717F40003F2A3 /* EZPObject+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291EA11D5717F40003F2A3 /* EZPObject+Synchronous.m */; };
+		0A291EA41D5717F40003F2A3 /* EZPObject+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291EA21D5717F40003F2A3 /* EZPObject+Synchronous.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		71362DDB090F1AD59481D585 /* libPods-EasyPost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D3F66DF0BAB8A7739C289D /* libPods-EasyPost.a */; };
 		B12040781BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12040761BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.h */; };
 		B12040791BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12040771BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.m */; };
-		B120407C1BF7453B0091B397 /* EZPShipment+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B120407A1BF7453B0091B397 /* EZPShipment+Synchronous.h */; };
-		B120407D1BF7453B0091B397 /* EZPShipment+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B120407B1BF7453B0091B397 /* EZPShipment+Synchronous.m */; };
-		B12040821BF748120091B397 /* EZPBatch+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12040801BF748120091B397 /* EZPBatch+Synchronous.h */; };
-		B12040831BF748120091B397 /* EZPBatch+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12040811BF748120091B397 /* EZPBatch+Synchronous.m */; };
-		B120408B1BF749A80091B397 /* EZPObject+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12040891BF749A80091B397 /* EZPObject+Synchronous.h */; };
-		B120408C1BF749A80091B397 /* EZPObject+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B120408A1BF749A80091B397 /* EZPObject+Synchronous.m */; };
-		B120409D1BF761180091B397 /* EZPAddress+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B120409B1BF761180091B397 /* EZPAddress+Synchronous.h */; };
-		B120409E1BF761180091B397 /* EZPAddress+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B120409C1BF761180091B397 /* EZPAddress+Synchronous.m */; };
-		B12040DC1BF77FC70091B397 /* EZPCarrierAccount+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12040DA1BF77FC70091B397 /* EZPCarrierAccount+Synchronous.h */; };
-		B12040DD1BF77FC70091B397 /* EZPCarrierAccount+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12040DB1BF77FC70091B397 /* EZPCarrierAccount+Synchronous.m */; };
-		B12040E31BF7836C0091B397 /* EZPCarrierType+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12040E11BF7836C0091B397 /* EZPCarrierType+Synchronous.h */; };
-		B12040E41BF7836C0091B397 /* EZPCarrierType+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12040E21BF7836C0091B397 /* EZPCarrierType+Synchronous.m */; };
-		B12040FE1BF7858A0091B397 /* EZPContainer+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12040FC1BF7858A0091B397 /* EZPContainer+Synchronous.h */; };
-		B12040FF1BF7858A0091B397 /* EZPContainer+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12040FD1BF7858A0091B397 /* EZPContainer+Synchronous.m */; };
-		B12041021BF786880091B397 /* EZPCustomsInfo+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12041001BF786880091B397 /* EZPCustomsInfo+Synchronous.h */; };
-		B12041031BF786880091B397 /* EZPCustomsInfo+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12041011BF786880091B397 /* EZPCustomsInfo+Synchronous.m */; };
-		B12041081BF787DE0091B397 /* EZPCustomsItem+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12041061BF787DE0091B397 /* EZPCustomsItem+Synchronous.h */; };
-		B12041091BF787DE0091B397 /* EZPCustomsItem+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12041071BF787DE0091B397 /* EZPCustomsItem+Synchronous.m */; };
-		B12041281BF78B360091B397 /* EZPItem+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12041261BF78B360091B397 /* EZPItem+Synchronous.h */; };
-		B12041291BF78B360091B397 /* EZPItem+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12041271BF78B360091B397 /* EZPItem+Synchronous.m */; };
-		B120414F1BF791580091B397 /* EZPOrder+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B120414D1BF791580091B397 /* EZPOrder+Synchronous.h */; };
-		B12041501BF791580091B397 /* EZPOrder+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B120414E1BF791580091B397 /* EZPOrder+Synchronous.m */; };
-		B12041711BF7A0EB0091B397 /* EZPParcel+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B120416F1BF7A0EB0091B397 /* EZPParcel+Synchronous.h */; };
-		B12041721BF7A0EB0091B397 /* EZPParcel+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12041701BF7A0EB0091B397 /* EZPParcel+Synchronous.m */; };
-		B12041B91BF7A6770091B397 /* EZPPickup+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12041B71BF7A6770091B397 /* EZPPickup+Synchronous.h */; };
-		B12041BA1BF7A6770091B397 /* EZPPickup+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12041B81BF7A6770091B397 /* EZPPickup+Synchronous.m */; };
-		B12041C01BF7AF870091B397 /* EZPRate+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12041BE1BF7AF870091B397 /* EZPRate+Synchronous.h */; };
-		B12041C11BF7AF870091B397 /* EZPRate+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12041BF1BF7AF870091B397 /* EZPRate+Synchronous.m */; };
 		B12041DD1BF802A20091B397 /* EZPShipmentList.h in Headers */ = {isa = PBXBuildFile; fileRef = B12041DB1BF802A20091B397 /* EZPShipmentList.h */; };
 		B12041DE1BF802A20091B397 /* EZPShipmentList.m in Sources */ = {isa = PBXBuildFile; fileRef = B12041DC1BF802A20091B397 /* EZPShipmentList.m */; };
-		B12041E11BF806E50091B397 /* EZPShipmentList+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12041DF1BF806E50091B397 /* EZPShipmentList+Synchronous.h */; };
-		B12041E21BF806E50091B397 /* EZPShipmentList+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12041E01BF806E50091B397 /* EZPShipmentList+Synchronous.m */; };
-		B12041F11BF8158D0091B397 /* EZPScanFormList+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12041EF1BF8158D0091B397 /* EZPScanFormList+Synchronous.h */; };
-		B12041F21BF8158D0091B397 /* EZPScanFormList+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12041F01BF8158D0091B397 /* EZPScanFormList+Synchronous.m */; };
-		B120423A1BF87C940091B397 /* EZPTracker+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12042381BF87C940091B397 /* EZPTracker+Synchronous.h */; };
-		B120423B1BF87C940091B397 /* EZPTracker+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12042391BF87C940091B397 /* EZPTracker+Synchronous.m */; };
 		B12042401BF87EFD0091B397 /* EZPTrackerList.h in Headers */ = {isa = PBXBuildFile; fileRef = B120423E1BF87EFD0091B397 /* EZPTrackerList.h */; };
 		B12042411BF87EFD0091B397 /* EZPTrackerList.m in Sources */ = {isa = PBXBuildFile; fileRef = B120423F1BF87EFD0091B397 /* EZPTrackerList.m */; };
-		B12042441BF87F840091B397 /* EZPTrackerList+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12042421BF87F840091B397 /* EZPTrackerList+Synchronous.h */; };
-		B12042451BF87F840091B397 /* EZPTrackerList+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12042431BF87F840091B397 /* EZPTrackerList+Synchronous.m */; };
-		B12042491BF883660091B397 /* EZPUser+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12042471BF883660091B397 /* EZPUser+Synchronous.h */; };
-		B120424A1BF883660091B397 /* EZPUser+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12042481BF883660091B397 /* EZPUser+Synchronous.m */; };
 		B120432B1BFAA6B80091B397 /* EZPAddressSynchronousTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B12040C01BF772470091B397 /* EZPAddressSynchronousTests.m */; };
 		B120432C1BFAA6B80091B397 /* EZPBatchSynchronousTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B12040871BF7493B0091B397 /* EZPBatchSynchronousTests.m */; };
 		B120432D1BFAA6B80091B397 /* EZPCarrierTypeSynchronousTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B12040E51BF783F00091B397 /* EZPCarrierTypeSynchronousTests.m */; };
@@ -107,8 +113,6 @@
 		B147D08B1BF557EB00AE43E9 /* ObjectMappingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B147D0771BF557EB00AE43E9 /* ObjectMappingInfo.m */; };
 		B147D08C1BF557EB00AE43E9 /* OCMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0781BF557EB00AE43E9 /* OCMapper.h */; };
 		B147D0911BF5D93F00AE43E9 /* shipment_dictionary.data in Resources */ = {isa = PBXBuildFile; fileRef = B147D0901BF5D93F00AE43E9 /* shipment_dictionary.data */; };
-		B148B7B51C4A39BD009C4936 /* EZPScanForm+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B148B7B31C4A39BD009C4936 /* EZPScanForm+Synchronous.h */; };
-		B148B7B61C4A39BD009C4936 /* EZPScanForm+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B148B7B41C4A39BD009C4936 /* EZPScanForm+Synchronous.m */; };
 		B158166D1BEAC83A00F771E4 /* EZPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B158166B1BEAC83A00F771E4 /* EZPRequest.h */; };
 		B158166E1BEAC83A00F771E4 /* EZPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B158166C1BEAC83A00F771E4 /* EZPRequest.m */; };
 		B1585B781BEA93EB0044FB1F /* libEasyPost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1585B381BEA930A0044FB1F /* libEasyPost.a */; };
@@ -142,6 +146,7 @@
 		B1E9825D1BF3F0B0001E9E83 /* EZPTrackingLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = B1E980A61BEF4C1C001E9E83 /* EZPTrackingLocation.h */; };
 		B1E9825E1BF3F0CE001E9E83 /* EZPTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E980A31BEF4C1C001E9E83 /* EZPTracker.m */; };
 		B1E982751BF40AB9001E9E83 /* EZPShipment.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E980B11BEF5638001E9E83 /* EZPShipment.m */; };
+		C74054A9614C788548706097 /* libPods-EasyPostTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6318A0E0F0FC6FEA1F5A2F72 /* libPods-EasyPostTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,70 +160,73 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00F2A70B39DBC7E379827F66 /* Pods-EasyPost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyPost.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyPost/Pods-EasyPost.debug.xcconfig"; sourceTree = "<group>"; };
-		0B7651112E5A1051676BF061 /* Pods-EasyPostTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyPostTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyPostTests/Pods-EasyPostTests.debug.xcconfig"; sourceTree = "<group>"; };
-		133479807A7132592D31F1F3 /* Pods-EasyPostTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyPostTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyPostTests/Pods-EasyPostTests.release.xcconfig"; sourceTree = "<group>"; };
-		6530CAB38BF21C09AF8F7147 /* libPods-EasyPost.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyPost.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72935C6253C1944F1CC03485 /* Pods-EasyPost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyPost.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyPost/Pods-EasyPost.release.xcconfig"; sourceTree = "<group>"; };
-		B12040671BF71A660091B397 /* Deferred.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deferred.h; sourceTree = "<group>"; };
-		B12040681BF71A660091B397 /* Deferred.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deferred.m; sourceTree = "<group>"; };
-		B12040691BF71A660091B397 /* Promise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Promise.h; sourceTree = "<group>"; };
-		B120406A1BF71A660091B397 /* Promise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Promise.m; sourceTree = "<group>"; };
+		0A291E461D5454330003F2A3 /* shipment_dictionary_flattened.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = shipment_dictionary_flattened.data; sourceTree = "<group>"; };
+		0A291E481D5454DC0003F2A3 /* EZPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZPClient.h; sourceTree = "<group>"; };
+		0A291E491D5454DC0003F2A3 /* EZPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPClient.m; sourceTree = "<group>"; };
+		0A291E4C1D5458550003F2A3 /* EZPClient+Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+Address.h"; sourceTree = "<group>"; };
+		0A291E4D1D5458550003F2A3 /* EZPClient+Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+Address.m"; sourceTree = "<group>"; };
+		0A291E501D54589B0003F2A3 /* EZPClient+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EZPClient+Private.h"; sourceTree = "<group>"; };
+		0A291E531D545E570003F2A3 /* EZPClient+Batch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+Batch.h"; sourceTree = "<group>"; };
+		0A291E541D545E570003F2A3 /* EZPClient+Batch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+Batch.m"; sourceTree = "<group>"; };
+		0A291E571D5469010003F2A3 /* EZPClient+CarrierAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+CarrierAccount.h"; sourceTree = "<group>"; };
+		0A291E581D5469010003F2A3 /* EZPClient+CarrierAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+CarrierAccount.m"; sourceTree = "<group>"; };
+		0A291E5B1D546A3B0003F2A3 /* EZPClient+CarrierType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+CarrierType.h"; sourceTree = "<group>"; };
+		0A291E5C1D546A3B0003F2A3 /* EZPClient+CarrierType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+CarrierType.m"; sourceTree = "<group>"; };
+		0A291E5F1D546B660003F2A3 /* EZPClient+Container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+Container.h"; sourceTree = "<group>"; };
+		0A291E601D546B660003F2A3 /* EZPClient+Container.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+Container.m"; sourceTree = "<group>"; };
+		0A291E631D546C550003F2A3 /* EZPClient+CustomsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+CustomsInfo.h"; sourceTree = "<group>"; };
+		0A291E641D546C550003F2A3 /* EZPClient+CustomsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+CustomsInfo.m"; sourceTree = "<group>"; };
+		0A291E671D546D840003F2A3 /* EZPClient+CustomsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+CustomsItem.h"; sourceTree = "<group>"; };
+		0A291E681D546D840003F2A3 /* EZPClient+CustomsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+CustomsItem.m"; sourceTree = "<group>"; };
+		0A291E6B1D546E530003F2A3 /* EZPClient+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+Item.h"; sourceTree = "<group>"; };
+		0A291E6C1D546E530003F2A3 /* EZPClient+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+Item.m"; sourceTree = "<group>"; };
+		0A291E701D546EFD0003F2A3 /* EZPClient+Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+Order.h"; sourceTree = "<group>"; };
+		0A291E711D546EFD0003F2A3 /* EZPClient+Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+Order.m"; sourceTree = "<group>"; };
+		0A291E741D54716B0003F2A3 /* EZPClient+Parcel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+Parcel.h"; sourceTree = "<group>"; };
+		0A291E751D54716B0003F2A3 /* EZPClient+Parcel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+Parcel.m"; sourceTree = "<group>"; };
+		0A291E781D5472540003F2A3 /* EZPClient+Pickup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+Pickup.h"; sourceTree = "<group>"; };
+		0A291E791D5472540003F2A3 /* EZPClient+Pickup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+Pickup.m"; sourceTree = "<group>"; };
+		0A291E7C1D5474AF0003F2A3 /* EZPClient+Rate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+Rate.h"; sourceTree = "<group>"; };
+		0A291E7D1D5474AF0003F2A3 /* EZPClient+Rate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+Rate.m"; sourceTree = "<group>"; };
+		0A291E801D54754A0003F2A3 /* EZPClient+ScanForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+ScanForm.h"; sourceTree = "<group>"; };
+		0A291E811D54754A0003F2A3 /* EZPClient+ScanForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+ScanForm.m"; sourceTree = "<group>"; };
+		0A291E841D5490C10003F2A3 /* EZPClient+Shipment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+Shipment.h"; sourceTree = "<group>"; };
+		0A291E851D5490C10003F2A3 /* EZPClient+Shipment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+Shipment.m"; sourceTree = "<group>"; };
+		0A291E881D54A8040003F2A3 /* EZPClient+Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+Tracker.h"; sourceTree = "<group>"; };
+		0A291E891D54A8040003F2A3 /* EZPClient+Tracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+Tracker.m"; sourceTree = "<group>"; };
+		0A291E8C1D54A91B0003F2A3 /* EZPClient+User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+User.h"; sourceTree = "<group>"; };
+		0A291E8D1D54A91B0003F2A3 /* EZPClient+User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+User.m"; sourceTree = "<group>"; };
+		0A291E901D55CA7C0003F2A3 /* EZPClient+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+Synchronous.h"; sourceTree = "<group>"; };
+		0A291E911D55CA7C0003F2A3 /* EZPClient+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+Synchronous.m"; sourceTree = "<group>"; };
+		0A291E951D561F890003F2A3 /* EZPClient+ScanFormList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+ScanFormList.h"; sourceTree = "<group>"; };
+		0A291E961D561F890003F2A3 /* EZPClient+ScanFormList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+ScanFormList.m"; sourceTree = "<group>"; };
+		0A291E991D5706A10003F2A3 /* EZPClient+ShipmentList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+ShipmentList.h"; sourceTree = "<group>"; };
+		0A291E9A1D5706A10003F2A3 /* EZPClient+ShipmentList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+ShipmentList.m"; sourceTree = "<group>"; };
+		0A291E9D1D5713340003F2A3 /* EZPClient+TrackerList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPClient+TrackerList.h"; sourceTree = "<group>"; };
+		0A291E9E1D5713340003F2A3 /* EZPClient+TrackerList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPClient+TrackerList.m"; sourceTree = "<group>"; };
+		0A291EA11D5717F40003F2A3 /* EZPObject+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPObject+Synchronous.m"; sourceTree = "<group>"; };
+		0A291EA21D5717F40003F2A3 /* EZPObject+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPObject+Synchronous.h"; sourceTree = "<group>"; };
+		1EBA9B26C03E61C825A85089 /* Pods-EasyPostTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyPostTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyPostTests/Pods-EasyPostTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6318A0E0F0FC6FEA1F5A2F72 /* libPods-EasyPostTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyPostTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3EDE69D06E00F7DFEF79F5 /* Pods-EasyPostTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyPostTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyPostTests/Pods-EasyPostTests.release.xcconfig"; sourceTree = "<group>"; };
+		8AD4500A3BD7BDF9B6276252 /* Pods-EasyPost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyPost.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyPost/Pods-EasyPost.debug.xcconfig"; sourceTree = "<group>"; };
 		B12040761BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestOperationManager+Synchronous.h"; sourceTree = "<group>"; };
 		B12040771BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestOperationManager+Synchronous.m"; sourceTree = "<group>"; };
-		B120407A1BF7453B0091B397 /* EZPShipment+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPShipment+Synchronous.h"; sourceTree = "<group>"; };
-		B120407B1BF7453B0091B397 /* EZPShipment+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPShipment+Synchronous.m"; sourceTree = "<group>"; };
 		B120407E1BF746F40091B397 /* EZPShipmentSynchronousTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPShipmentSynchronousTests.m; sourceTree = "<group>"; };
-		B12040801BF748120091B397 /* EZPBatch+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPBatch+Synchronous.h"; sourceTree = "<group>"; };
-		B12040811BF748120091B397 /* EZPBatch+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPBatch+Synchronous.m"; sourceTree = "<group>"; };
 		B12040871BF7493B0091B397 /* EZPBatchSynchronousTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPBatchSynchronousTests.m; sourceTree = "<group>"; };
-		B12040891BF749A80091B397 /* EZPObject+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPObject+Synchronous.h"; sourceTree = "<group>"; };
-		B120408A1BF749A80091B397 /* EZPObject+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPObject+Synchronous.m"; sourceTree = "<group>"; };
-		B120409B1BF761180091B397 /* EZPAddress+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPAddress+Synchronous.h"; sourceTree = "<group>"; };
-		B120409C1BF761180091B397 /* EZPAddress+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPAddress+Synchronous.m"; sourceTree = "<group>"; };
 		B12040C01BF772470091B397 /* EZPAddressSynchronousTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPAddressSynchronousTests.m; sourceTree = "<group>"; };
-		B12040DA1BF77FC70091B397 /* EZPCarrierAccount+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPCarrierAccount+Synchronous.h"; sourceTree = "<group>"; };
-		B12040DB1BF77FC70091B397 /* EZPCarrierAccount+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPCarrierAccount+Synchronous.m"; sourceTree = "<group>"; };
-		B12040E11BF7836C0091B397 /* EZPCarrierType+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPCarrierType+Synchronous.h"; sourceTree = "<group>"; };
-		B12040E21BF7836C0091B397 /* EZPCarrierType+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPCarrierType+Synchronous.m"; sourceTree = "<group>"; };
 		B12040E51BF783F00091B397 /* EZPCarrierTypeSynchronousTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPCarrierTypeSynchronousTests.m; sourceTree = "<group>"; };
-		B12040FC1BF7858A0091B397 /* EZPContainer+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPContainer+Synchronous.h"; sourceTree = "<group>"; };
-		B12040FD1BF7858A0091B397 /* EZPContainer+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPContainer+Synchronous.m"; sourceTree = "<group>"; };
-		B12041001BF786880091B397 /* EZPCustomsInfo+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPCustomsInfo+Synchronous.h"; sourceTree = "<group>"; };
-		B12041011BF786880091B397 /* EZPCustomsInfo+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPCustomsInfo+Synchronous.m"; sourceTree = "<group>"; };
 		B12041041BF787270091B397 /* EZPCustomsInfoSynchronousTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPCustomsInfoSynchronousTests.m; sourceTree = "<group>"; };
-		B12041061BF787DE0091B397 /* EZPCustomsItem+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPCustomsItem+Synchronous.h"; sourceTree = "<group>"; };
-		B12041071BF787DE0091B397 /* EZPCustomsItem+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPCustomsItem+Synchronous.m"; sourceTree = "<group>"; };
 		B120410A1BF788A50091B397 /* EZPCustomsItemSynchronousTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPCustomsItemSynchronousTests.m; sourceTree = "<group>"; };
-		B12041261BF78B360091B397 /* EZPItem+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPItem+Synchronous.h"; sourceTree = "<group>"; };
-		B12041271BF78B360091B397 /* EZPItem+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPItem+Synchronous.m"; sourceTree = "<group>"; };
-		B120414D1BF791580091B397 /* EZPOrder+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPOrder+Synchronous.h"; sourceTree = "<group>"; };
-		B120414E1BF791580091B397 /* EZPOrder+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPOrder+Synchronous.m"; sourceTree = "<group>"; };
 		B12041511BF793440091B397 /* EZPOrderSynchronousTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPOrderSynchronousTests.m; sourceTree = "<group>"; };
-		B120416F1BF7A0EB0091B397 /* EZPParcel+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPParcel+Synchronous.h"; sourceTree = "<group>"; };
-		B12041701BF7A0EB0091B397 /* EZPParcel+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPParcel+Synchronous.m"; sourceTree = "<group>"; };
 		B12041731BF7A23F0091B397 /* EZPParcelSynchronousTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPParcelSynchronousTests.m; sourceTree = "<group>"; };
-		B12041B71BF7A6770091B397 /* EZPPickup+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPPickup+Synchronous.h"; sourceTree = "<group>"; };
-		B12041B81BF7A6770091B397 /* EZPPickup+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPPickup+Synchronous.m"; sourceTree = "<group>"; };
 		B12041BB1BF7A9A00091B397 /* EZPPickupSynchronousTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPPickupSynchronousTests.m; sourceTree = "<group>"; };
-		B12041BE1BF7AF870091B397 /* EZPRate+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPRate+Synchronous.h"; sourceTree = "<group>"; };
-		B12041BF1BF7AF870091B397 /* EZPRate+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPRate+Synchronous.m"; sourceTree = "<group>"; };
 		B12041C21BF7B0680091B397 /* EZPRateSynchronousTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPRateSynchronousTests.m; sourceTree = "<group>"; };
 		B12041DB1BF802A20091B397 /* EZPShipmentList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZPShipmentList.h; sourceTree = "<group>"; };
 		B12041DC1BF802A20091B397 /* EZPShipmentList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPShipmentList.m; sourceTree = "<group>"; };
-		B12041DF1BF806E50091B397 /* EZPShipmentList+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPShipmentList+Synchronous.h"; sourceTree = "<group>"; };
-		B12041E01BF806E50091B397 /* EZPShipmentList+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPShipmentList+Synchronous.m"; sourceTree = "<group>"; };
-		B12041EF1BF8158D0091B397 /* EZPScanFormList+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPScanFormList+Synchronous.h"; sourceTree = "<group>"; };
-		B12041F01BF8158D0091B397 /* EZPScanFormList+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPScanFormList+Synchronous.m"; sourceTree = "<group>"; };
-		B12042381BF87C940091B397 /* EZPTracker+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPTracker+Synchronous.h"; sourceTree = "<group>"; };
-		B12042391BF87C940091B397 /* EZPTracker+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPTracker+Synchronous.m"; sourceTree = "<group>"; };
 		B120423C1BF87DB10091B397 /* EZPTrackerSynchronousTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPTrackerSynchronousTests.m; sourceTree = "<group>"; };
 		B120423E1BF87EFD0091B397 /* EZPTrackerList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZPTrackerList.h; sourceTree = "<group>"; };
 		B120423F1BF87EFD0091B397 /* EZPTrackerList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPTrackerList.m; sourceTree = "<group>"; };
-		B12042421BF87F840091B397 /* EZPTrackerList+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPTrackerList+Synchronous.h"; sourceTree = "<group>"; };
-		B12042431BF87F840091B397 /* EZPTrackerList+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPTrackerList+Synchronous.m"; sourceTree = "<group>"; };
-		B12042471BF883660091B397 /* EZPUser+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPUser+Synchronous.h"; sourceTree = "<group>"; };
-		B12042481BF883660091B397 /* EZPUser+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPUser+Synchronous.m"; sourceTree = "<group>"; };
 		B120424B1BF887890091B397 /* EZPUserSynchronousTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPUserSynchronousTests.m; sourceTree = "<group>"; };
 		B143165A1BEB438E00212B0E /* EZPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZPUser.h; sourceTree = "<group>"; };
 		B143165B1BEB438E00212B0E /* EZPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPUser.m; sourceTree = "<group>"; };
@@ -267,8 +275,6 @@
 		B147D08E1BF5D8ED00AE43E9 /* NSDictionaryUtilityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryUtilityTests.m; sourceTree = "<group>"; };
 		B147D0901BF5D93F00AE43E9 /* shipment_dictionary.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = shipment_dictionary.data; sourceTree = "<group>"; };
 		B147D0CA1BF6ACF500AE43E9 /* EZPBatchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPBatchTests.m; sourceTree = "<group>"; };
-		B148B7B31C4A39BD009C4936 /* EZPScanForm+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZPScanForm+Synchronous.h"; sourceTree = "<group>"; };
-		B148B7B41C4A39BD009C4936 /* EZPScanForm+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZPScanForm+Synchronous.m"; sourceTree = "<group>"; };
 		B158166B1BEAC83A00F771E4 /* EZPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZPRequest.h; sourceTree = "<group>"; };
 		B158166C1BEAC83A00F771E4 /* EZPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPRequest.m; sourceTree = "<group>"; };
 		B15816871BEAECA900F771E4 /* EZPParcel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZPParcel.h; sourceTree = "<group>"; };
@@ -319,7 +325,8 @@
 		B1E981971BF14756001E9E83 /* NSDictionaryUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryUtility.m; sourceTree = "<group>"; };
 		B1E982571BF3EE77001E9E83 /* EZPScanFormList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZPScanFormList.h; sourceTree = "<group>"; };
 		B1E982581BF3EE77001E9E83 /* EZPScanFormList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPScanFormList.m; sourceTree = "<group>"; };
-		E4661C5CAFD5BBC71CB87199 /* libPods-EasyPostTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyPostTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D862194D56BD6B1BCC90F790 /* Pods-EasyPost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyPost.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyPost/Pods-EasyPost.release.xcconfig"; sourceTree = "<group>"; };
+		E1D3F66DF0BAB8A7739C289D /* libPods-EasyPost.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyPost.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,7 +334,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0433C1885B5A8A9F9EF7A2E /* libPods-EasyPost.a in Frameworks */,
+				71362DDB090F1AD59481D585 /* libPods-EasyPost.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,89 +343,82 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1585B781BEA93EB0044FB1F /* libEasyPost.a in Frameworks */,
-				6B683C3196971BCF932AD3F2 /* libPods-EasyPostTests.a in Frameworks */,
+				C74054A9614C788548706097 /* libPods-EasyPostTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		42203B4E31301EF9919BF6C7 /* Pods */ = {
+		0A291E511D5458FF0003F2A3 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				00F2A70B39DBC7E379827F66 /* Pods-EasyPost.debug.xcconfig */,
-				72935C6253C1944F1CC03485 /* Pods-EasyPost.release.xcconfig */,
-				0B7651112E5A1051676BF061 /* Pods-EasyPostTests.debug.xcconfig */,
-				133479807A7132592D31F1F3 /* Pods-EasyPostTests.release.xcconfig */,
+				0A291E481D5454DC0003F2A3 /* EZPClient.h */,
+				0A291E491D5454DC0003F2A3 /* EZPClient.m */,
+				0A291E941D5605CE0003F2A3 /* Internal */,
+				0A291E4C1D5458550003F2A3 /* EZPClient+Address.h */,
+				0A291E4D1D5458550003F2A3 /* EZPClient+Address.m */,
+				0A291E531D545E570003F2A3 /* EZPClient+Batch.h */,
+				0A291E541D545E570003F2A3 /* EZPClient+Batch.m */,
+				0A291E571D5469010003F2A3 /* EZPClient+CarrierAccount.h */,
+				0A291E581D5469010003F2A3 /* EZPClient+CarrierAccount.m */,
+				0A291E5B1D546A3B0003F2A3 /* EZPClient+CarrierType.h */,
+				0A291E5C1D546A3B0003F2A3 /* EZPClient+CarrierType.m */,
+				0A291E5F1D546B660003F2A3 /* EZPClient+Container.h */,
+				0A291E601D546B660003F2A3 /* EZPClient+Container.m */,
+				0A291E631D546C550003F2A3 /* EZPClient+CustomsInfo.h */,
+				0A291E641D546C550003F2A3 /* EZPClient+CustomsInfo.m */,
+				0A291E671D546D840003F2A3 /* EZPClient+CustomsItem.h */,
+				0A291E681D546D840003F2A3 /* EZPClient+CustomsItem.m */,
+				0A291E6B1D546E530003F2A3 /* EZPClient+Item.h */,
+				0A291E6C1D546E530003F2A3 /* EZPClient+Item.m */,
+				0A291E701D546EFD0003F2A3 /* EZPClient+Order.h */,
+				0A291E711D546EFD0003F2A3 /* EZPClient+Order.m */,
+				0A291E741D54716B0003F2A3 /* EZPClient+Parcel.h */,
+				0A291E751D54716B0003F2A3 /* EZPClient+Parcel.m */,
+				0A291E781D5472540003F2A3 /* EZPClient+Pickup.h */,
+				0A291E791D5472540003F2A3 /* EZPClient+Pickup.m */,
+				0A291E7C1D5474AF0003F2A3 /* EZPClient+Rate.h */,
+				0A291E7D1D5474AF0003F2A3 /* EZPClient+Rate.m */,
+				0A291E801D54754A0003F2A3 /* EZPClient+ScanForm.h */,
+				0A291E811D54754A0003F2A3 /* EZPClient+ScanForm.m */,
+				0A291E951D561F890003F2A3 /* EZPClient+ScanFormList.h */,
+				0A291E961D561F890003F2A3 /* EZPClient+ScanFormList.m */,
+				0A291E841D5490C10003F2A3 /* EZPClient+Shipment.h */,
+				0A291E851D5490C10003F2A3 /* EZPClient+Shipment.m */,
+				0A291E991D5706A10003F2A3 /* EZPClient+ShipmentList.h */,
+				0A291E9A1D5706A10003F2A3 /* EZPClient+ShipmentList.m */,
+				0A291E881D54A8040003F2A3 /* EZPClient+Tracker.h */,
+				0A291E891D54A8040003F2A3 /* EZPClient+Tracker.m */,
+				0A291E9D1D5713340003F2A3 /* EZPClient+TrackerList.h */,
+				0A291E9E1D5713340003F2A3 /* EZPClient+TrackerList.m */,
+				0A291E8C1D54A91B0003F2A3 /* EZPClient+User.h */,
+				0A291E8D1D54A91B0003F2A3 /* EZPClient+User.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		0A291E941D5605CE0003F2A3 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				0A291E501D54589B0003F2A3 /* EZPClient+Private.h */,
+				0A291E901D55CA7C0003F2A3 /* EZPClient+Synchronous.h */,
+				0A291E911D55CA7C0003F2A3 /* EZPClient+Synchronous.m */,
+				0A291EA11D5717F40003F2A3 /* EZPObject+Synchronous.m */,
+				0A291EA21D5717F40003F2A3 /* EZPObject+Synchronous.h */,
+			);
+			name = Internal;
+			sourceTree = "<group>";
+		};
+		4F8CBB5C09C609DABB11BD9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AD4500A3BD7BDF9B6276252 /* Pods-EasyPost.debug.xcconfig */,
+				D862194D56BD6B1BCC90F790 /* Pods-EasyPost.release.xcconfig */,
+				1EBA9B26C03E61C825A85089 /* Pods-EasyPostTests.debug.xcconfig */,
+				8A3EDE69D06E00F7DFEF79F5 /* Pods-EasyPostTests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		586787E50360ADFFD5C37057 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6530CAB38BF21C09AF8F7147 /* libPods-EasyPost.a */,
-				E4661C5CAFD5BBC71CB87199 /* libPods-EasyPostTests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B12040661BF71A660091B397 /* Promise */ = {
-			isa = PBXGroup;
-			children = (
-				B12040671BF71A660091B397 /* Deferred.h */,
-				B12040681BF71A660091B397 /* Deferred.m */,
-				B12040691BF71A660091B397 /* Promise.h */,
-				B120406A1BF71A660091B397 /* Promise.m */,
-			);
-			path = Promise;
-			sourceTree = "<group>";
-		};
-		B12040841BF748400091B397 /* Synchronous */ = {
-			isa = PBXGroup;
-			children = (
-				B12040891BF749A80091B397 /* EZPObject+Synchronous.h */,
-				B120408A1BF749A80091B397 /* EZPObject+Synchronous.m */,
-				B120409B1BF761180091B397 /* EZPAddress+Synchronous.h */,
-				B120409C1BF761180091B397 /* EZPAddress+Synchronous.m */,
-				B12040801BF748120091B397 /* EZPBatch+Synchronous.h */,
-				B12040811BF748120091B397 /* EZPBatch+Synchronous.m */,
-				B12040DA1BF77FC70091B397 /* EZPCarrierAccount+Synchronous.h */,
-				B12040DB1BF77FC70091B397 /* EZPCarrierAccount+Synchronous.m */,
-				B12040E11BF7836C0091B397 /* EZPCarrierType+Synchronous.h */,
-				B12040E21BF7836C0091B397 /* EZPCarrierType+Synchronous.m */,
-				B12040FC1BF7858A0091B397 /* EZPContainer+Synchronous.h */,
-				B12040FD1BF7858A0091B397 /* EZPContainer+Synchronous.m */,
-				B12041001BF786880091B397 /* EZPCustomsInfo+Synchronous.h */,
-				B12041011BF786880091B397 /* EZPCustomsInfo+Synchronous.m */,
-				B12041061BF787DE0091B397 /* EZPCustomsItem+Synchronous.h */,
-				B12041071BF787DE0091B397 /* EZPCustomsItem+Synchronous.m */,
-				B12041261BF78B360091B397 /* EZPItem+Synchronous.h */,
-				B12041271BF78B360091B397 /* EZPItem+Synchronous.m */,
-				B120414D1BF791580091B397 /* EZPOrder+Synchronous.h */,
-				B120414E1BF791580091B397 /* EZPOrder+Synchronous.m */,
-				B120416F1BF7A0EB0091B397 /* EZPParcel+Synchronous.h */,
-				B12041701BF7A0EB0091B397 /* EZPParcel+Synchronous.m */,
-				B12041B71BF7A6770091B397 /* EZPPickup+Synchronous.h */,
-				B12041B81BF7A6770091B397 /* EZPPickup+Synchronous.m */,
-				B12041BE1BF7AF870091B397 /* EZPRate+Synchronous.h */,
-				B12041BF1BF7AF870091B397 /* EZPRate+Synchronous.m */,
-				B148B7B31C4A39BD009C4936 /* EZPScanForm+Synchronous.h */,
-				B148B7B41C4A39BD009C4936 /* EZPScanForm+Synchronous.m */,
-				B12041EF1BF8158D0091B397 /* EZPScanFormList+Synchronous.h */,
-				B12041F01BF8158D0091B397 /* EZPScanFormList+Synchronous.m */,
-				B120407A1BF7453B0091B397 /* EZPShipment+Synchronous.h */,
-				B120407B1BF7453B0091B397 /* EZPShipment+Synchronous.m */,
-				B12041DF1BF806E50091B397 /* EZPShipmentList+Synchronous.h */,
-				B12041E01BF806E50091B397 /* EZPShipmentList+Synchronous.m */,
-				B12042381BF87C940091B397 /* EZPTracker+Synchronous.h */,
-				B12042391BF87C940091B397 /* EZPTracker+Synchronous.m */,
-				B12042421BF87F840091B397 /* EZPTrackerList+Synchronous.h */,
-				B12042431BF87F840091B397 /* EZPTrackerList+Synchronous.m */,
-				B12042471BF883660091B397 /* EZPUser+Synchronous.h */,
-				B12042481BF883660091B397 /* EZPUser+Synchronous.m */,
-			);
-			name = Synchronous;
 			sourceTree = "<group>";
 		};
 		B12040851BF748CD0091B397 /* Asynchronous */ = {
@@ -534,8 +534,8 @@
 				B1585B3A1BEA930A0044FB1F /* EasyPost */,
 				B1585B741BEA93EB0044FB1F /* EasyPostTests */,
 				B1585B391BEA930A0044FB1F /* Products */,
-				42203B4E31301EF9919BF6C7 /* Pods */,
-				586787E50360ADFFD5C37057 /* Frameworks */,
+				4F8CBB5C09C609DABB11BD9D /* Pods */,
+				E59CDF839C6FC45547BF4406 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -553,8 +553,8 @@
 			children = (
 				B1585B821BEA9A760044FB1F /* EZPConfiguration.h */,
 				B1585B831BEA9A760044FB1F /* EZPConfiguration.m */,
-				B1E981531BF0A461001E9E83 /* Asynchronous */,
-				B12040841BF748400091B397 /* Synchronous */,
+				0A291E511D5458FF0003F2A3 /* API */,
+				B1E981531BF0A461001E9E83 /* Models */,
 				B1E981551BF0A4A8001E9E83 /* Utility */,
 				B1E981541BF0A49C001E9E83 /* Categories */,
 			);
@@ -568,12 +568,13 @@
 				B12040861BF748E10091B397 /* Synchronous */,
 				B147D08E1BF5D8ED00AE43E9 /* NSDictionaryUtilityTests.m */,
 				B147D0901BF5D93F00AE43E9 /* shipment_dictionary.data */,
+				0A291E461D5454330003F2A3 /* shipment_dictionary_flattened.data */,
 				B1585B771BEA93EB0044FB1F /* Info.plist */,
 			);
 			path = EasyPostTests;
 			sourceTree = "<group>";
 		};
-		B1E981531BF0A461001E9E83 /* Asynchronous */ = {
+		B1E981531BF0A461001E9E83 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				B15816911BEAF2B700F771E4 /* EZPObject.h */,
@@ -628,10 +629,9 @@
 				B1E980A71BEF4C1C001E9E83 /* EZPTrackingLocation.m */,
 				B143165A1BEB438E00212B0E /* EZPUser.h */,
 				B143165B1BEB438E00212B0E /* EZPUser.m */,
-				B12040661BF71A660091B397 /* Promise */,
 				B147D05F1BF557EB00AE43E9 /* OCMapper */,
 			);
-			name = Asynchronous;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		B1E981541BF0A49C001E9E83 /* Categories */ = {
@@ -658,6 +658,15 @@
 			name = Utility;
 			sourceTree = "<group>";
 		};
+		E59CDF839C6FC45547BF4406 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1D3F66DF0BAB8A7739C289D /* libPods-EasyPost.a */,
+				6318A0E0F0FC6FEA1F5A2F72 /* libPods-EasyPostTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -665,52 +674,53 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B12041081BF787DE0091B397 /* EZPCustomsItem+Synchronous.h in Headers */,
+				0A291E9F1D5713340003F2A3 /* EZPClient+TrackerList.h in Headers */,
+				0A291E521D545B570003F2A3 /* EZPClient+Private.h in Headers */,
+				0A291EA41D5717F40003F2A3 /* EZPObject+Synchronous.h in Headers */,
+				0A291E921D55CA7C0003F2A3 /* EZPClient+Synchronous.h in Headers */,
 				B147D0871BF557EB00AE43E9 /* MappingProvider.h in Headers */,
 				B1E981981BF14756001E9E83 /* NSDictionaryUtility.h in Headers */,
 				B147D0801BF557EB00AE43E9 /* ObjectInstanceProvider.h in Headers */,
-				B12040DC1BF77FC70091B397 /* EZPCarrierAccount+Synchronous.h in Headers */,
+				0A291E6D1D546E530003F2A3 /* EZPClient+Item.h in Headers */,
 				B12042401BF87EFD0091B397 /* EZPTrackerList.h in Headers */,
-				B120423A1BF87C940091B397 /* EZPTracker+Synchronous.h in Headers */,
-				B12042491BF883660091B397 /* EZPUser+Synchronous.h in Headers */,
-				B12040821BF748120091B397 /* EZPBatch+Synchronous.h in Headers */,
-				B148B7B51C4A39BD009C4936 /* EZPScanForm+Synchronous.h in Headers */,
+				0A291E691D546D840003F2A3 /* EZPClient+CustomsItem.h in Headers */,
+				0A291E4E1D5458550003F2A3 /* EZPClient+Address.h in Headers */,
+				0A291E9B1D5706A10003F2A3 /* EZPClient+ShipmentList.h in Headers */,
 				B12040781BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.h in Headers */,
-				B120406B1BF71A660091B397 /* Deferred.h in Headers */,
 				B158166D1BEAC83A00F771E4 /* EZPRequest.h in Headers */,
-				B12041711BF7A0EB0091B397 /* EZPParcel+Synchronous.h in Headers */,
 				B147D0821BF557EB00AE43E9 /* CommonLoggingProvider.h in Headers */,
 				B1E982591BF3EE77001E9E83 /* EZPScanFormList.h in Headers */,
-				B12042441BF87F840091B397 /* EZPTrackerList+Synchronous.h in Headers */,
+				0A291E761D54716B0003F2A3 /* EZPClient+Parcel.h in Headers */,
+				0A291E971D561F890003F2A3 /* EZPClient+ScanFormList.h in Headers */,
 				B143166B1BEBE50500212B0E /* EZPPropertyUtility.h in Headers */,
+				0A291E551D545E570003F2A3 /* EZPClient+Batch.h in Headers */,
 				B147D07D1BF557EB00AE43E9 /* InstanceProvider.h in Headers */,
 				B147D08A1BF557EB00AE43E9 /* ObjectMappingInfo.h in Headers */,
-				B120408B1BF749A80091B397 /* EZPObject+Synchronous.h in Headers */,
-				B12041281BF78B360091B397 /* EZPItem+Synchronous.h in Headers */,
 				B147D07B1BF557EB00AE43E9 /* NSObject+ObjectMapper.h in Headers */,
-				B120414F1BF791580091B397 /* EZPOrder+Synchronous.h in Headers */,
-				B12040E31BF7836C0091B397 /* EZPCarrierType+Synchronous.h in Headers */,
-				B12041E11BF806E50091B397 /* EZPShipmentList+Synchronous.h in Headers */,
+				0A291E7E1D5474AF0003F2A3 /* EZPClient+Rate.h in Headers */,
+				0A291E591D5469010003F2A3 /* EZPClient+CarrierAccount.h in Headers */,
 				B14316E21BED3E6500212B0E /* NSString+EZPString.h in Headers */,
-				B12041021BF786880091B397 /* EZPCustomsInfo+Synchronous.h in Headers */,
 				B147D0841BF557EB00AE43E9 /* LoggingProvider.h in Headers */,
 				B147D0881BF557EB00AE43E9 /* ObjectMapper.h in Headers */,
-				B120409D1BF761180091B397 /* EZPAddress+Synchronous.h in Headers */,
+				0A291E821D54754A0003F2A3 /* EZPClient+ScanForm.h in Headers */,
 				B12041DD1BF802A20091B397 /* EZPShipmentList.h in Headers */,
 				B1E9824D1BF3EC2A001E9E83 /* EZPItem.h in Headers */,
-				B12041F11BF8158D0091B397 /* EZPScanFormList+Synchronous.h in Headers */,
-				B12041B91BF7A6770091B397 /* EZPPickup+Synchronous.h in Headers */,
+				0A291E611D546B660003F2A3 /* EZPClient+Container.h in Headers */,
 				B1E982481BF3EBA5001E9E83 /* EZPCustomsItem.h in Headers */,
-				B120406D1BF71A660091B397 /* Promise.h in Headers */,
+				0A291E5D1D546A3B0003F2A3 /* EZPClient+CarrierType.h in Headers */,
+				0A291E8A1D54A8040003F2A3 /* EZPClient+Tracker.h in Headers */,
+				0A291E721D546EFD0003F2A3 /* EZPClient+Order.h in Headers */,
+				0A291E4A1D5454DC0003F2A3 /* EZPClient.h in Headers */,
+				0A291E651D546C550003F2A3 /* EZPClient+CustomsInfo.h in Headers */,
 				B1585B841BEA9A760044FB1F /* EZPConfiguration.h in Headers */,
-				B120407C1BF7453B0091B397 /* EZPShipment+Synchronous.h in Headers */,
 				B147D0851BF557EB00AE43E9 /* InCodeMappingProvider.h in Headers */,
 				B1E9825D1BF3F0B0001E9E83 /* EZPTrackingLocation.h in Headers */,
 				B147D08C1BF557EB00AE43E9 /* OCMapper.h in Headers */,
 				B147D0791BF557EB00AE43E9 /* NSDictionary+ObjectMapper.h in Headers */,
 				B147D07E1BF557EB00AE43E9 /* ManagedObjectInstanceProvider.h in Headers */,
-				B12041C01BF7AF870091B397 /* EZPRate+Synchronous.h in Headers */,
-				B12040FE1BF7858A0091B397 /* EZPContainer+Synchronous.h in Headers */,
+				0A291E7A1D5472540003F2A3 /* EZPClient+Pickup.h in Headers */,
+				0A291E8E1D54A91B0003F2A3 /* EZPClient+User.h in Headers */,
+				0A291E861D5490C10003F2A3 /* EZPClient+Shipment.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,11 +731,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1585B411BEA930A0044FB1F /* Build configuration list for PBXNativeTarget "EasyPost" */;
 			buildPhases = (
-				C4ADDCCE50F5BEB02880B82F /* Check Pods Manifest.lock */,
+				5151FD25D0BDE3C108087493 /* [CP] Check Pods Manifest.lock */,
 				B1585B341BEA930A0044FB1F /* Sources */,
 				B1585B351BEA930A0044FB1F /* Frameworks */,
 				B1585B361BEA930A0044FB1F /* Headers */,
-				7CF13C8769066C5B24CE0F04 /* Copy Pods Resources */,
+				01574B9D271F8C16C5F29FD4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -740,12 +750,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1585B7D1BEA93EB0044FB1F /* Build configuration list for PBXNativeTarget "EasyPostTests" */;
 			buildPhases = (
-				6D64B2BBC710370F2B6604C7 /* Check Pods Manifest.lock */,
+				96BE42FCB3208E9431C01EE2 /* [CP] Check Pods Manifest.lock */,
 				B1585B6F1BEA93EB0044FB1F /* Sources */,
 				B1585B701BEA93EB0044FB1F /* Frameworks */,
 				B1585B711BEA93EB0044FB1F /* Resources */,
-				B5B5FB978D369B94FB2052B7 /* Embed Pods Frameworks */,
-				BDA373B0D1B77174803DD4DE /* Copy Pods Resources */,
+				64009219BD0F522F13599363 /* [CP] Embed Pods Frameworks */,
+				F71A31E36EC89620A77962F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -797,6 +807,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A291E471D5454330003F2A3 /* shipment_dictionary_flattened.data in Resources */,
 				B147D0911BF5D93F00AE43E9 /* shipment_dictionary.data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -804,29 +815,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6D64B2BBC710370F2B6604C7 /* Check Pods Manifest.lock */ = {
+		01574B9D271F8C16C5F29FD4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7CF13C8769066C5B24CE0F04 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -834,14 +830,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyPost/Pods-EasyPost-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B5B5FB978D369B94FB2052B7 /* Embed Pods Frameworks */ = {
+		5151FD25D0BDE3C108087493 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		64009219BD0F522F13599363 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -849,34 +860,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyPostTests/Pods-EasyPostTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BDA373B0D1B77174803DD4DE /* Copy Pods Resources */ = {
+		96BE42FCB3208E9431C01EE2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyPostTests/Pods-EasyPostTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C4ADDCCE50F5BEB02880B82F /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F71A31E36EC89620A77962F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyPostTests/Pods-EasyPostTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -887,63 +898,65 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E981991BF14756001E9E83 /* NSDictionaryUtility.m in Sources */,
-				B12040DD1BF77FC70091B397 /* EZPCarrierAccount+Synchronous.m in Sources */,
-				B120423B1BF87C940091B397 /* EZPTracker+Synchronous.m in Sources */,
-				B12041031BF786880091B397 /* EZPCustomsInfo+Synchronous.m in Sources */,
+				0A291E5A1D5469010003F2A3 /* EZPClient+CarrierAccount.m in Sources */,
 				B1E9823F1BF3EA2F001E9E83 /* EZPCarrierAccount.m in Sources */,
-				B12040FF1BF7858A0091B397 /* EZPContainer+Synchronous.m in Sources */,
+				0A291E4F1D5458550003F2A3 /* EZPClient+Address.m in Sources */,
 				B1E9824B1BF3EC20001E9E83 /* EZPFee.m in Sources */,
 				B1E9825C1BF3F0AA001E9E83 /* EZPTrackingDetail.m in Sources */,
-				B12041091BF787DE0091B397 /* EZPCustomsItem+Synchronous.m in Sources */,
 				B14316E31BED3E6500212B0E /* NSString+EZPString.m in Sources */,
+				0A291E621D546B660003F2A3 /* EZPClient+Container.m in Sources */,
+				0A291E6E1D546E530003F2A3 /* EZPClient+Item.m in Sources */,
 				B1E982501BF3ECF3001E9E83 /* EZPPickup.m in Sources */,
-				B120409E1BF761180091B397 /* EZPAddress+Synchronous.m in Sources */,
 				B1E982491BF3EBDA001E9E83 /* EZPCustomsItem.m in Sources */,
 				B1E982291BF393B5001E9E83 /* EZPParcel.m in Sources */,
 				B1E982751BF40AB9001E9E83 /* EZPShipment.m in Sources */,
-				B12041F21BF8158D0091B397 /* EZPScanFormList+Synchronous.m in Sources */,
-				B120424A1BF883660091B397 /* EZPUser+Synchronous.m in Sources */,
+				0A291E5E1D546A3B0003F2A3 /* EZPClient+CarrierType.m in Sources */,
+				0A291E871D5490C10003F2A3 /* EZPClient+Shipment.m in Sources */,
+				0A291E7F1D5474AF0003F2A3 /* EZPClient+Rate.m in Sources */,
 				B1E982531BF3ED61001E9E83 /* EZPRate.m in Sources */,
 				B1E982421BF3EAB7001E9E83 /* EZPCarrierType.m in Sources */,
-				B120407D1BF7453B0091B397 /* EZPShipment+Synchronous.m in Sources */,
 				B1E982521BF3ED38001E9E83 /* EZPPostageLabel.m in Sources */,
 				B1E982441BF3EAD1001E9E83 /* EZPBatch.m in Sources */,
-				B12041C11BF7AF870091B397 /* EZPRate+Synchronous.m in Sources */,
-				B12040E41BF7836C0091B397 /* EZPCarrierType+Synchronous.m in Sources */,
 				B147D0831BF557EB00AE43E9 /* CommonLoggingProvider.m in Sources */,
-				B12040831BF748120091B397 /* EZPBatch+Synchronous.m in Sources */,
-				B12041291BF78B360091B397 /* EZPItem+Synchronous.m in Sources */,
 				B1E982411BF3EAB1001E9E83 /* EZPContainer.m in Sources */,
+				0A291E6A1D546D840003F2A3 /* EZPClient+CustomsItem.m in Sources */,
 				B147D0811BF557EB00AE43E9 /* ObjectInstanceProvider.m in Sources */,
-				B12041501BF791580091B397 /* EZPOrder+Synchronous.m in Sources */,
 				B1E982461BF3EB5C001E9E83 /* EZPCustomsInfo.m in Sources */,
 				B1E9825A1BF3EE77001E9E83 /* EZPScanFormList.m in Sources */,
 				B147D08B1BF557EB00AE43E9 /* ObjectMappingInfo.m in Sources */,
-				B120408C1BF749A80091B397 /* EZPObject+Synchronous.m in Sources */,
-				B12041721BF7A0EB0091B397 /* EZPParcel+Synchronous.m in Sources */,
+				0A291E831D54754A0003F2A3 /* EZPClient+ScanForm.m in Sources */,
+				0A291E981D561F890003F2A3 /* EZPClient+ScanFormList.m in Sources */,
+				0A291EA01D5713340003F2A3 /* EZPClient+TrackerList.m in Sources */,
 				B147D07C1BF557EB00AE43E9 /* NSObject+ObjectMapper.m in Sources */,
 				B147D07A1BF557EB00AE43E9 /* NSDictionary+ObjectMapper.m in Sources */,
 				B1E9825E1BF3F0CE001E9E83 /* EZPTracker.m in Sources */,
-				B148B7B61C4A39BD009C4936 /* EZPScanForm+Synchronous.m in Sources */,
 				B1E9824C1BF3EC26001E9E83 /* EZPForm.m in Sources */,
+				0A291E661D546C550003F2A3 /* EZPClient+CustomsInfo.m in Sources */,
 				B1E9824F1BF3EC7D001E9E83 /* EZPOrder.m in Sources */,
-				B12041E21BF806E50091B397 /* EZPShipmentList+Synchronous.m in Sources */,
 				B1585B851BEA9A760044FB1F /* EZPConfiguration.m in Sources */,
+				0A291E8B1D54A8040003F2A3 /* EZPClient+Tracker.m in Sources */,
 				B143166C1BEBE50500212B0E /* EZPPropertyUtility.m in Sources */,
 				B12040791BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.m in Sources */,
+				0A291E4B1D5454DC0003F2A3 /* EZPClient.m in Sources */,
+				0A291E731D546EFD0003F2A3 /* EZPClient+Order.m in Sources */,
+				0A291E7B1D5472540003F2A3 /* EZPClient+Pickup.m in Sources */,
 				B1E982431BF3EABE001E9E83 /* EZPBatchShipment.m in Sources */,
 				B147D07F1BF557EB00AE43E9 /* ManagedObjectInstanceProvider.m in Sources */,
 				B158166E1BEAC83A00F771E4 /* EZPRequest.m in Sources */,
-				B12041BA1BF7A6770091B397 /* EZPPickup+Synchronous.m in Sources */,
+				0A291E931D55CA7C0003F2A3 /* EZPClient+Synchronous.m in Sources */,
 				B1E982391BF3DD34001E9E83 /* EZPAddress.m in Sources */,
 				B1E9824E1BF3EC42001E9E83 /* EZPItem.m in Sources */,
 				B12042411BF87EFD0091B397 /* EZPTrackerList.m in Sources */,
 				B12041DE1BF802A20091B397 /* EZPShipmentList.m in Sources */,
 				B1E981FD1BF3214D001E9E83 /* EZPObject.m in Sources */,
 				B147D0891BF557EB00AE43E9 /* ObjectMapper.m in Sources */,
-				B12042451BF87F840091B397 /* EZPTrackerList+Synchronous.m in Sources */,
+				0A291E9C1D5706A10003F2A3 /* EZPClient+ShipmentList.m in Sources */,
+				0A291EA31D5717F40003F2A3 /* EZPObject+Synchronous.m in Sources */,
+				0A291E8F1D54A91B0003F2A3 /* EZPClient+User.m in Sources */,
+				0A291E771D54716B0003F2A3 /* EZPClient+Parcel.m in Sources */,
 				B147D0861BF557EB00AE43E9 /* InCodeMappingProvider.m in Sources */,
 				B1E982551BF3EDC0001E9E83 /* EZPScanForm.m in Sources */,
+				0A291E561D545E570003F2A3 /* EZPClient+Batch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -978,6 +991,7 @@
 				B120432B1BFAA6B80091B397 /* EZPAddressSynchronousTests.m in Sources */,
 				B12043381BFAA7450091B397 /* EZPBatchTests.m in Sources */,
 				B14316E41BED3F8100212B0E /* EZPUser.m in Sources */,
+				0A291E451D54538E0003F2A3 /* NSDictionaryUtilityTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1073,7 +1087,7 @@
 		};
 		B1585B421BEA930A0044FB1F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00F2A70B39DBC7E379827F66 /* Pods-EasyPost.debug.xcconfig */;
+			baseConfigurationReference = 8AD4500A3BD7BDF9B6276252 /* Pods-EasyPost.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
@@ -1083,7 +1097,7 @@
 		};
 		B1585B431BEA930A0044FB1F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72935C6253C1944F1CC03485 /* Pods-EasyPost.release.xcconfig */;
+			baseConfigurationReference = D862194D56BD6B1BCC90F790 /* Pods-EasyPost.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
@@ -1093,7 +1107,7 @@
 		};
 		B1585B7B1BEA93EB0044FB1F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B7651112E5A1051676BF061 /* Pods-EasyPostTests.debug.xcconfig */;
+			baseConfigurationReference = 1EBA9B26C03E61C825A85089 /* Pods-EasyPostTests.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EasyPostTests/Info.plist;
@@ -1105,7 +1119,7 @@
 		};
 		B1585B7C1BEA93EB0044FB1F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 133479807A7132592D31F1F3 /* Pods-EasyPostTests.release.xcconfig */;
+			baseConfigurationReference = 8A3EDE69D06E00F7DFEF79F5 /* Pods-EasyPostTests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EasyPostTests/Info.plist;
