@@ -27,7 +27,7 @@ self.client = [[EZPClient alloc] initWithSecretKey:@"XXXXX"];
 
 ## Usage
 
-This library includes methods for asynchronous and synchronous access to EasyPost API. Below is an example of creating an address object and verifying it:
+This library includes methods for asynchronous and synchronous access to EasyPost API. Below is an example of creation an address object and verifying it:
 
 * Asynchronous:
 
