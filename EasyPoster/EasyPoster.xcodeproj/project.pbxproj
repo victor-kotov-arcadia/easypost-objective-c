@@ -14,13 +14,12 @@
 		B15816641BEAB42900F771E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15816621BEAB42900F771E4 /* Main.storyboard */; };
 		B158169A1BEAF94500F771E4 /* Deferred.m in Sources */ = {isa = PBXBuildFile; fileRef = B15816971BEAF94500F771E4 /* Deferred.m */; };
 		B158169B1BEAF94500F771E4 /* Promise.m in Sources */ = {isa = PBXBuildFile; fileRef = B15816991BEAF94500F771E4 /* Promise.m */; };
-		CDF82F8549D301603659E9F4 /* libPods-EasyPoster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554229704D519E0EB30ABD3 /* libPods-EasyPoster.a */; };
+		D0F27690F8BAFDB593B61B72 /* libPods-EasyPoster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C34B8A2EA172D10C953710 /* libPods-EasyPoster.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0554229704D519E0EB30ABD3 /* libPods-EasyPoster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyPoster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1396FCA52370D468B228873B /* Pods-EasyPoster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyPoster.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyPoster/Pods-EasyPoster.release.xcconfig"; sourceTree = "<group>"; };
-		4ABB652A0C86B1F9735CFDB8 /* Pods-EasyPoster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyPoster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyPoster/Pods-EasyPoster.debug.xcconfig"; sourceTree = "<group>"; };
+		57EF1DAE35AAAD4627D91CED /* Pods-EasyPoster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyPoster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyPoster/Pods-EasyPoster.debug.xcconfig"; sourceTree = "<group>"; };
+		945CF8408A75E0ABF33A440B /* Pods-EasyPoster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyPoster.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyPoster/Pods-EasyPoster.release.xcconfig"; sourceTree = "<group>"; };
 		B15816541BEAB42900F771E4 /* EasyPoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyPoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15816571BEAB42900F771E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B15816581BEAB42900F771E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		B15816971BEAF94500F771E4 /* Deferred.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deferred.m; sourceTree = "<group>"; };
 		B15816981BEAF94500F771E4 /* Promise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Promise.h; sourceTree = "<group>"; };
 		B15816991BEAF94500F771E4 /* Promise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Promise.m; sourceTree = "<group>"; };
+		E8C34B8A2EA172D10C953710 /* libPods-EasyPoster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyPoster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,37 +41,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDF82F8549D301603659E9F4 /* libPods-EasyPoster.a in Frameworks */,
+				D0F27690F8BAFDB593B61B72 /* libPods-EasyPoster.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		322D73ABDC66DEAB1E8A316C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0554229704D519E0EB30ABD3 /* libPods-EasyPoster.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		90A998A553F8773F6E540D89 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4ABB652A0C86B1F9735CFDB8 /* Pods-EasyPoster.debug.xcconfig */,
-				1396FCA52370D468B228873B /* Pods-EasyPoster.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		B158164B1BEAB42900F771E4 = {
 			isa = PBXGroup;
 			children = (
 				B15816561BEAB42900F771E4 /* EasyPoster */,
 				B15816551BEAB42900F771E4 /* Products */,
-				90A998A553F8773F6E540D89 /* Pods */,
-				322D73ABDC66DEAB1E8A316C /* Frameworks */,
+				B1B6F5EB67CA81F9683B412F /* Pods */,
+				DD5E307FBF04E2B73A436F6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +101,23 @@
 			path = Promise;
 			sourceTree = SOURCE_ROOT;
 		};
+		B1B6F5EB67CA81F9683B412F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57EF1DAE35AAAD4627D91CED /* Pods-EasyPoster.debug.xcconfig */,
+				945CF8408A75E0ABF33A440B /* Pods-EasyPoster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD5E307FBF04E2B73A436F6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8C34B8A2EA172D10C953710 /* libPods-EasyPoster.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,12 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B15816681BEAB42900F771E4 /* Build configuration list for PBXNativeTarget "EasyPoster" */;
 			buildPhases = (
-				F642F5C40778C5F182D46A8C /* Check Pods Manifest.lock */,
+				3C7D652371B3995735FD86AC /* [CP] Check Pods Manifest.lock */,
 				B15816501BEAB42900F771E4 /* Sources */,
 				B15816511BEAB42900F771E4 /* Frameworks */,
 				B15816521BEAB42900F771E4 /* Resources */,
-				F12C0840FAFDDD9CD9F50A26 /* Embed Pods Frameworks */,
-				822A4FC7F9D7CC412B4473D9 /* Copy Pods Resources */,
+				F09D69B08B2B7C5A2726CDBB /* [CP] Embed Pods Frameworks */,
+				275E614E9A0882EFE2970A0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,14 +186,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		822A4FC7F9D7CC412B4473D9 /* Copy Pods Resources */ = {
+		275E614E9A0882EFE2970A0E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,34 +201,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyPoster/Pods-EasyPoster-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F12C0840FAFDDD9CD9F50A26 /* Embed Pods Frameworks */ = {
+		3C7D652371B3995735FD86AC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyPoster/Pods-EasyPoster-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F642F5C40778C5F182D46A8C /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F09D69B08B2B7C5A2726CDBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyPoster/Pods-EasyPoster-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -341,7 +341,7 @@
 		};
 		B15816691BEAB42900F771E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ABB652A0C86B1F9735CFDB8 /* Pods-EasyPoster.debug.xcconfig */;
+			baseConfigurationReference = 57EF1DAE35AAAD4627D91CED /* Pods-EasyPoster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -354,7 +354,7 @@
 		};
 		B158166A1BEAB42900F771E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1396FCA52370D468B228873B /* Pods-EasyPoster.release.xcconfig */;
+			baseConfigurationReference = 945CF8408A75E0ABF33A440B /* Pods-EasyPoster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;

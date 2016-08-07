@@ -17,24 +17,25 @@ PODS:
   - AFNetworking/Reachability (2.6.3)
   - AFNetworking/Security (2.6.3)
   - AFNetworking/Serialization (2.6.3)
-  - EasyPost (0.0.1):
-    - AFNetworking
+  - EasyPost (0.0.4):
+    - AFNetworking (~> 2.6.3)
 
 DEPENDENCIES:
-  - AFNetworking (= 2.6.3)
-  - EasyPost (from `https://github.com/sdrpa/easypost-objective-c`)
+  - EasyPost (from `https://github.com/rodionovd/easypost-objective-c.git`)
 
 EXTERNAL SOURCES:
   EasyPost:
-    :git: https://github.com/sdrpa/easypost-objective-c
+    :git: https://github.com/rodionovd/easypost-objective-c.git
 
 CHECKOUT OPTIONS:
   EasyPost:
-    :commit: 974e50e3678dfeab0369f4088b1a8cfcf0b80f0b
-    :git: https://github.com/sdrpa/easypost-objective-c
+    :commit: 9b98b318c51355644047ab03a17ed9e0b8fde561
+    :git: https://github.com/rodionovd/easypost-objective-c.git
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  EasyPost: 79d865b24db143ca6298150a0b3e0a6b96eea28c
+  EasyPost: 4d2b4b618f41b1a511068bf917412e45c9c7cb60
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: a4d1034bb23a8a48c79ddc707c506e274be792a0
+
+COCOAPODS: 1.0.1
