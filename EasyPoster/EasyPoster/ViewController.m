@@ -19,6 +19,10 @@
 - (void)awakeFromNib
 {
     self.easyPostClient = [EZPClient defaultClient];
+    NSAssert(![self.easyPostClient.APISecretKey isEqualToString:@"YOUR_TEST_API_KEY"],
+             @"Don't forget to use your real EasyPost API key");
+    NSAssert(![self.easyPostClient.APISecretKey isEqualToString:@"YOUR_LIVE_API_KEY"],
+             @"Don't forget to use your real EasyPost API key");
 }
 
 - (void)viewDidLoad {
