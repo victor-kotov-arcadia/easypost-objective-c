@@ -55,7 +55,7 @@
 		0A291EA31D5717F40003F2A3 /* EZPObject+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291EA11D5717F40003F2A3 /* EZPObject+Synchronous.m */; };
 		0A291EA41D5717F40003F2A3 /* EZPObject+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A291EA21D5717F40003F2A3 /* EZPObject+Synchronous.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		71362DDB090F1AD59481D585 /* libPods-EasyPost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D3F66DF0BAB8A7739C289D /* libPods-EasyPost.a */; };
-		B12040781BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12040761BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.h */; };
+		B12040781BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = B12040761BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B12040791BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B12040771BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.m */; };
 		B12041DD1BF802A20091B397 /* EZPShipmentList.h in Headers */ = {isa = PBXBuildFile; fileRef = B12041DB1BF802A20091B397 /* EZPShipmentList.h */; };
 		B12041DE1BF802A20091B397 /* EZPShipmentList.m in Sources */ = {isa = PBXBuildFile; fileRef = B12041DC1BF802A20091B397 /* EZPShipmentList.m */; };
@@ -92,26 +92,26 @@
 		B14316E21BED3E6500212B0E /* NSString+EZPString.h in Headers */ = {isa = PBXBuildFile; fileRef = B14316E01BED3E6500212B0E /* NSString+EZPString.h */; };
 		B14316E31BED3E6500212B0E /* NSString+EZPString.m in Sources */ = {isa = PBXBuildFile; fileRef = B14316E11BED3E6500212B0E /* NSString+EZPString.m */; };
 		B14316E41BED3F8100212B0E /* EZPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B143165B1BEB438E00212B0E /* EZPUser.m */; };
-		B147D0791BF557EB00AE43E9 /* NSDictionary+ObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0611BF557EB00AE43E9 /* NSDictionary+ObjectMapper.h */; };
+		B147D0791BF557EB00AE43E9 /* NSDictionary+ObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0611BF557EB00AE43E9 /* NSDictionary+ObjectMapper.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B147D07A1BF557EB00AE43E9 /* NSDictionary+ObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B147D0621BF557EB00AE43E9 /* NSDictionary+ObjectMapper.m */; };
-		B147D07B1BF557EB00AE43E9 /* NSObject+ObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0631BF557EB00AE43E9 /* NSObject+ObjectMapper.h */; };
+		B147D07B1BF557EB00AE43E9 /* NSObject+ObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0631BF557EB00AE43E9 /* NSObject+ObjectMapper.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B147D07C1BF557EB00AE43E9 /* NSObject+ObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B147D0641BF557EB00AE43E9 /* NSObject+ObjectMapper.m */; };
-		B147D07D1BF557EB00AE43E9 /* InstanceProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0661BF557EB00AE43E9 /* InstanceProvider.h */; };
-		B147D07E1BF557EB00AE43E9 /* ManagedObjectInstanceProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0671BF557EB00AE43E9 /* ManagedObjectInstanceProvider.h */; };
+		B147D07D1BF557EB00AE43E9 /* InstanceProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0661BF557EB00AE43E9 /* InstanceProvider.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B147D07E1BF557EB00AE43E9 /* ManagedObjectInstanceProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0671BF557EB00AE43E9 /* ManagedObjectInstanceProvider.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B147D07F1BF557EB00AE43E9 /* ManagedObjectInstanceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B147D0681BF557EB00AE43E9 /* ManagedObjectInstanceProvider.m */; };
-		B147D0801BF557EB00AE43E9 /* ObjectInstanceProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0691BF557EB00AE43E9 /* ObjectInstanceProvider.h */; };
+		B147D0801BF557EB00AE43E9 /* ObjectInstanceProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0691BF557EB00AE43E9 /* ObjectInstanceProvider.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B147D0811BF557EB00AE43E9 /* ObjectInstanceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B147D06A1BF557EB00AE43E9 /* ObjectInstanceProvider.m */; };
-		B147D0821BF557EB00AE43E9 /* CommonLoggingProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D06C1BF557EB00AE43E9 /* CommonLoggingProvider.h */; };
+		B147D0821BF557EB00AE43E9 /* CommonLoggingProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D06C1BF557EB00AE43E9 /* CommonLoggingProvider.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B147D0831BF557EB00AE43E9 /* CommonLoggingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B147D06D1BF557EB00AE43E9 /* CommonLoggingProvider.m */; };
-		B147D0841BF557EB00AE43E9 /* LoggingProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D06E1BF557EB00AE43E9 /* LoggingProvider.h */; };
-		B147D0851BF557EB00AE43E9 /* InCodeMappingProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0711BF557EB00AE43E9 /* InCodeMappingProvider.h */; };
+		B147D0841BF557EB00AE43E9 /* LoggingProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D06E1BF557EB00AE43E9 /* LoggingProvider.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B147D0851BF557EB00AE43E9 /* InCodeMappingProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0711BF557EB00AE43E9 /* InCodeMappingProvider.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B147D0861BF557EB00AE43E9 /* InCodeMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B147D0721BF557EB00AE43E9 /* InCodeMappingProvider.m */; };
-		B147D0871BF557EB00AE43E9 /* MappingProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0731BF557EB00AE43E9 /* MappingProvider.h */; };
-		B147D0881BF557EB00AE43E9 /* ObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0741BF557EB00AE43E9 /* ObjectMapper.h */; };
+		B147D0871BF557EB00AE43E9 /* MappingProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0731BF557EB00AE43E9 /* MappingProvider.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B147D0881BF557EB00AE43E9 /* ObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0741BF557EB00AE43E9 /* ObjectMapper.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B147D0891BF557EB00AE43E9 /* ObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B147D0751BF557EB00AE43E9 /* ObjectMapper.m */; };
-		B147D08A1BF557EB00AE43E9 /* ObjectMappingInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0761BF557EB00AE43E9 /* ObjectMappingInfo.h */; };
+		B147D08A1BF557EB00AE43E9 /* ObjectMappingInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0761BF557EB00AE43E9 /* ObjectMappingInfo.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B147D08B1BF557EB00AE43E9 /* ObjectMappingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B147D0771BF557EB00AE43E9 /* ObjectMappingInfo.m */; };
-		B147D08C1BF557EB00AE43E9 /* OCMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0781BF557EB00AE43E9 /* OCMapper.h */; };
+		B147D08C1BF557EB00AE43E9 /* OCMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B147D0781BF557EB00AE43E9 /* OCMapper.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B147D0911BF5D93F00AE43E9 /* shipment_dictionary.data in Resources */ = {isa = PBXBuildFile; fileRef = B147D0901BF5D93F00AE43E9 /* shipment_dictionary.data */; };
 		B158166D1BEAC83A00F771E4 /* EZPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B158166B1BEAC83A00F771E4 /* EZPRequest.h */; };
 		B158166E1BEAC83A00F771E4 /* EZPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B158166C1BEAC83A00F771E4 /* EZPRequest.m */; };
@@ -677,31 +677,35 @@
 				0A291E9F1D5713340003F2A3 /* EZPClient+TrackerList.h in Headers */,
 				0A291E521D545B570003F2A3 /* EZPClient+Private.h in Headers */,
 				0A291EA41D5717F40003F2A3 /* EZPObject+Synchronous.h in Headers */,
-				0A291E921D55CA7C0003F2A3 /* EZPClient+Synchronous.h in Headers */,
 				B147D0871BF557EB00AE43E9 /* MappingProvider.h in Headers */,
-				B1E981981BF14756001E9E83 /* NSDictionaryUtility.h in Headers */,
 				B147D0801BF557EB00AE43E9 /* ObjectInstanceProvider.h in Headers */,
+				B12040781BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.h in Headers */,
+				B147D0821BF557EB00AE43E9 /* CommonLoggingProvider.h in Headers */,
+				B147D07D1BF557EB00AE43E9 /* InstanceProvider.h in Headers */,
+				B147D08A1BF557EB00AE43E9 /* ObjectMappingInfo.h in Headers */,
+				B147D07B1BF557EB00AE43E9 /* NSObject+ObjectMapper.h in Headers */,
+				B147D0841BF557EB00AE43E9 /* LoggingProvider.h in Headers */,
+				B147D0881BF557EB00AE43E9 /* ObjectMapper.h in Headers */,
+				B147D0851BF557EB00AE43E9 /* InCodeMappingProvider.h in Headers */,
+				B147D08C1BF557EB00AE43E9 /* OCMapper.h in Headers */,
+				B147D0791BF557EB00AE43E9 /* NSDictionary+ObjectMapper.h in Headers */,
+				B147D07E1BF557EB00AE43E9 /* ManagedObjectInstanceProvider.h in Headers */,
+				0A291E921D55CA7C0003F2A3 /* EZPClient+Synchronous.h in Headers */,
+				B1E981981BF14756001E9E83 /* NSDictionaryUtility.h in Headers */,
 				0A291E6D1D546E530003F2A3 /* EZPClient+Item.h in Headers */,
 				B12042401BF87EFD0091B397 /* EZPTrackerList.h in Headers */,
 				0A291E691D546D840003F2A3 /* EZPClient+CustomsItem.h in Headers */,
 				0A291E4E1D5458550003F2A3 /* EZPClient+Address.h in Headers */,
 				0A291E9B1D5706A10003F2A3 /* EZPClient+ShipmentList.h in Headers */,
-				B12040781BF73CD60091B397 /* AFHTTPRequestOperationManager+Synchronous.h in Headers */,
 				B158166D1BEAC83A00F771E4 /* EZPRequest.h in Headers */,
-				B147D0821BF557EB00AE43E9 /* CommonLoggingProvider.h in Headers */,
 				B1E982591BF3EE77001E9E83 /* EZPScanFormList.h in Headers */,
 				0A291E761D54716B0003F2A3 /* EZPClient+Parcel.h in Headers */,
 				0A291E971D561F890003F2A3 /* EZPClient+ScanFormList.h in Headers */,
 				B143166B1BEBE50500212B0E /* EZPPropertyUtility.h in Headers */,
 				0A291E551D545E570003F2A3 /* EZPClient+Batch.h in Headers */,
-				B147D07D1BF557EB00AE43E9 /* InstanceProvider.h in Headers */,
-				B147D08A1BF557EB00AE43E9 /* ObjectMappingInfo.h in Headers */,
-				B147D07B1BF557EB00AE43E9 /* NSObject+ObjectMapper.h in Headers */,
 				0A291E7E1D5474AF0003F2A3 /* EZPClient+Rate.h in Headers */,
 				0A291E591D5469010003F2A3 /* EZPClient+CarrierAccount.h in Headers */,
 				B14316E21BED3E6500212B0E /* NSString+EZPString.h in Headers */,
-				B147D0841BF557EB00AE43E9 /* LoggingProvider.h in Headers */,
-				B147D0881BF557EB00AE43E9 /* ObjectMapper.h in Headers */,
 				0A291E821D54754A0003F2A3 /* EZPClient+ScanForm.h in Headers */,
 				B12041DD1BF802A20091B397 /* EZPShipmentList.h in Headers */,
 				B1E9824D1BF3EC2A001E9E83 /* EZPItem.h in Headers */,
@@ -713,11 +717,7 @@
 				0A291E4A1D5454DC0003F2A3 /* EZPClient.h in Headers */,
 				0A291E651D546C550003F2A3 /* EZPClient+CustomsInfo.h in Headers */,
 				B1585B841BEA9A760044FB1F /* EZPConfiguration.h in Headers */,
-				B147D0851BF557EB00AE43E9 /* InCodeMappingProvider.h in Headers */,
 				B1E9825D1BF3F0B0001E9E83 /* EZPTrackingLocation.h in Headers */,
-				B147D08C1BF557EB00AE43E9 /* OCMapper.h in Headers */,
-				B147D0791BF557EB00AE43E9 /* NSDictionary+ObjectMapper.h in Headers */,
-				B147D07E1BF557EB00AE43E9 /* ManagedObjectInstanceProvider.h in Headers */,
 				0A291E7A1D5472540003F2A3 /* EZPClient+Pickup.h in Headers */,
 				0A291E8E1D54A91B0003F2A3 /* EZPClient+User.h in Headers */,
 				0A291E861D5490C10003F2A3 /* EZPClient+Shipment.h in Headers */,
